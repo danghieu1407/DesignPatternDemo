@@ -10,3 +10,5 @@
 - Giang Vinh Dien - 51900035
 - Dang Phuc Huy - 51900087
 - Tran Gia Huy - 51900685
+## Database
+- SQL Server
