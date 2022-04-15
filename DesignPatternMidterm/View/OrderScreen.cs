@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Demo.Controller.DecoratorPattern.ChickenDecorator;
 using Demo.Controller.DecoratorPattern.MilkTeaDecorator;
-
+using Demo.Controller.CommandPattern;
 
 namespace DesignPatternMidterm.View
 {
@@ -29,10 +29,27 @@ namespace DesignPatternMidterm.View
         bool pepsinormal = false; // Biến cờ cho Pepsi vị thường
         bool thaixanh = false;//Biến cờ cho trà sữa thái xanh
         bool thaido = false;//Biến cờ cho trà sữa thái đỏ
+
+
+
+        private ButtonCommandBase batMon, mauNut, anNut, hienNut;
+
+        private CheckBoxCommandBase batTopping, tatTopping, disableTopping, enableTopping;
+
         public OrderScreen()
         {
             InitializeComponent();
+            //Command Pattern cho các nút món ăn và topping
+            batMon = new EnableCmd(gaRan, pizza, pepsi, traSua);
+            mauNut = new DefColor(gaRan, pizza, pepsi, traSua);
 
+            batTopping = new ToppingOn(tuongot, tuongca, khoaitay, banhngot, tranChau, banhFlan, thachDeo);
+            tatTopping = new ToppingOff(tuongot, tuongca, khoaitay, banhngot, tranChau, banhFlan, thachDeo);
+
+            anNut = new ButtonHide(cay, phoMai, haiSan, thapCam, lemon, normal, thaiDo, thaiXanh); ;
+
+            disableTopping = new CheckboxDisableCmd(tuongot, tuongca, khoaitay, banhngot, tranChau, banhFlan, thachDeo);
+            enableTopping = new CheckboxEnableCmd(tuongot, tuongca, khoaitay, banhngot, tranChau, banhFlan, thachDeo);
 
             //Tạo bảng 
             listMon.Columns.Add("STT", typeof(int));
@@ -61,6 +78,9 @@ namespace DesignPatternMidterm.View
             cancelForm.Enabled = false;
             cancelMenu.Enabled = false;
             addMenu.Enabled = false;
+            disableTopping.execute();
+            anNut.execute();
+            tatTopping.execute();
         }
 
         private void gaRan_Click(object sender, EventArgs e)
@@ -71,7 +91,7 @@ namespace DesignPatternMidterm.View
             phoMai.Show();
             cancelMenu.Enabled = true;
 
-            
+
             pizza.Enabled = false;
             pepsi.Enabled = false;
             traSua.Enabled = false;
@@ -95,7 +115,7 @@ namespace DesignPatternMidterm.View
         private void pizza_Click(object sender, EventArgs e)
         {
             cancelMenu.Enabled = true;
-            
+
             pickFood.Text = "";
             pickFood.Text = pickFood.Text + " + Pizza";
 
@@ -223,7 +243,7 @@ namespace DesignPatternMidterm.View
             }
         }
 
-        
+
 
 
 
@@ -517,16 +537,63 @@ namespace DesignPatternMidterm.View
                 pepsinormal = false;
 
 
-               
-
+                tatTopping.execute();
+                disableTopping.execute();
                 soLuong.Text = "1";
 
-               
+                batMon.execute();
+
+                mauNut.execute();
 
                 addMenu.Enabled = false;
 
 
             }
+        }
+
+        private void cancelMenu_Click(object sender, EventArgs e)
+        {
+            cancelMenu.Enabled = false;
+
+            batMon.execute();
+
+            soLuong.Text = "1";
+            thanhtien.Text = thanhtien.Text;
+            pickFood.Text = "";
+            addMenu.Enabled = false;
+
+            gaPhoMai = false;
+            gaCay = false;
+            pizzaHaisan = false;
+            pizzaThapcam = false;
+            thaido = false;
+            thaixanh = false;
+            pepsilemon = false;
+            pepsinormal = false;
+
+            anNut.execute();
+
+            thanhToan.Hide();
+
+
+            disableTopping.execute();
+
+            tatTopping.execute();
+
+            mauNut.execute();
+        }
+
+        private void cay_Click(object sender, EventArgs e)
+        {
+            pickFood.Text = pickFood.Text + " + Vị cay";
+            addMenu.Enabled = true;
+            cay.Hide();
+            phoMai.Hide();
+            tuongot.Enabled = true;
+            tuongca.Enabled = true;
+            khoaitay.Enabled = true;
+            banhngot.Enabled = true;
+            gaCay = true;
         }
 
         private void khoaitay_CheckedChanged(object sender, EventArgs e)
@@ -573,7 +640,23 @@ namespace DesignPatternMidterm.View
             pepsilemon = false;
             pepsinormal = false;
 
+            tatTopping.execute();
+
+
+            disableTopping.execute();
+
+
+            batMon.execute();
+
             addMenu.Enabled = false;
+
+            anNut.execute();
+
+            thanhToan.Hide();
+
+
+
+            mauNut.execute();
 
             // Hủy cái bảng
             listMon.Clear();
@@ -583,7 +666,7 @@ namespace DesignPatternMidterm.View
 
         private void tranChau_CheckedChanged(object sender, EventArgs e)
         {
-            if(pickFood.Text.Contains("Trân châu"))
+            if (pickFood.Text.Contains("Trân châu"))
             {
                 pickFood.Text = pickFood.Text;
             }
