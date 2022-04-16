@@ -14,11 +14,11 @@ namespace DesignPatternMidterm.Controller.TemplateMethodPattern
         }
         protected override string preprocessing()
         {
-            return "Xếp bột và nguyên liệu vào khuôn";
+            return "Xếp khuôn vào bột và nguyên liệu";
         }
         protected override string processing()
         {
-            return "Để khuôn pizza đã xếp vào lò nướng";
+            return "Để lò nướng vào khuôn pizza";
         }
         protected override string taste(string n)
         {

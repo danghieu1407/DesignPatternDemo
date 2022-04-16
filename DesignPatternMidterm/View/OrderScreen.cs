@@ -29,7 +29,11 @@ namespace DesignPatternMidterm.View
         bool pepsinormal = false; // Biến cờ cho Pepsi vị thường
         bool thaixanh = false;//Biến cờ cho trà sữa thái xanh
         bool thaido = false;//Biến cờ cho trà sữa thái đỏ
-
+        bool tuongOt = false;
+        bool tuongCa = false;
+        bool thachdeo = false;
+        bool flan = false;
+        bool tranchau = false;
 
 
         private ButtonCommandBase batMon, mauNut, anNut, hienNut;
@@ -223,11 +227,21 @@ namespace DesignPatternMidterm.View
         {
             if (pickFood.Text.Contains("Tương ớt"))
             {
+                
                 pickFood.Text = pickFood.Text;
+               
             }
             else
             {
-                pickFood.Text = pickFood.Text + " + Tương ớt";
+                if (tuongot.Checked)
+                {
+                    pickFood.Text = pickFood.Text + " + Tương ớt";
+                }
+
+                else
+                {
+                    pickFood.Text = pickFood.Text;
+                }
             }
         }
 
@@ -239,7 +253,16 @@ namespace DesignPatternMidterm.View
             }
             else
             {
-                pickFood.Text = pickFood.Text + " + Tương cà";
+                if (tuongca.Checked)
+                {
+                    pickFood.Text = pickFood.Text + " + Tương cà";
+                }
+                
+                else
+                {
+                    pickFood.Text = pickFood.Text;
+                }
+                
             }
         }
 
@@ -397,7 +420,8 @@ namespace DesignPatternMidterm.View
                     price = 8000 * parsedValue;
                 }
 
-
+                
+                // tuong ca tuong ot
                 if (tuongca.Checked == true)
                 {
                     if (pickFood.Text.Contains("Tương cà"))
@@ -571,6 +595,9 @@ namespace DesignPatternMidterm.View
             pepsilemon = false;
             pepsinormal = false;
 
+            tuongot.Checked = false;
+            tuongca.Checked = false;
+
             anNut.execute();
 
             thanhToan.Hide();
@@ -672,7 +699,16 @@ namespace DesignPatternMidterm.View
             }
             else
             {
-                pickFood.Text = pickFood.Text + " + Trân châu";
+
+                if (tranChau.Checked)
+                {
+                    pickFood.Text = pickFood.Text + " + Trân châu";
+                }
+
+                else
+                {
+                    pickFood.Text = pickFood.Text;
+                }
             }
         }
 
@@ -684,7 +720,15 @@ namespace DesignPatternMidterm.View
             }
             else
             {
-                pickFood.Text = pickFood.Text + " + Bánh flan";
+                if (banhFlan.Checked)
+                {
+                    pickFood.Text = pickFood.Text + " + Bánh flan";
+                }
+
+                else
+                {
+                    pickFood.Text = pickFood.Text;
+                }
             }
         }
 
@@ -696,7 +740,15 @@ namespace DesignPatternMidterm.View
             }
             else
             {
-                pickFood.Text = pickFood.Text + " + Thạch dẻo";
+                if (thachDeo.Checked)
+                {
+                    pickFood.Text = pickFood.Text + " + Thạch dẻo";
+                }
+
+                else
+                {
+                    pickFood.Text = pickFood.Text;
+                }
             }
         }
     }

@@ -15,21 +15,21 @@ namespace DesignPatternMidterm.Controller.TemplateMethodPattern
         }
         protected override string preprocessing()
         {
-            return "Tẩm gia vị vào gà";
+            return "Tẩm gà vào gia vị";
         }
         protected override string processing()
         {
-            return "Bỏ gà vào chảo chiên";
+            return "Bỏ chảo dầu vào gà";
         }
         protected override string taste(string n)
         {
             if (n.Contains("Vị cay"))
             {
-                return "Thêm vị cay vào gà";
+                return "Thêm gà vào vị cay";
             }
             else 
             {
-                return "Thêm vị phô mai vào gà";
+                return "Thêm gà vào phô mai";
             }
 
         }
