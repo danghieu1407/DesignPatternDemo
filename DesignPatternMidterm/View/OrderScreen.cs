@@ -623,6 +623,54 @@ namespace DesignPatternMidterm.View
             gaCay = true;
         }
 
+        private void thanhToan_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tổng hóa đơn là: " + thanhtien.Text +" VNĐ");
+            thanhtien.Text = "";
+            pickFood.Text = "";
+            dongia.Clear();
+            cancelForm.Enabled = false;
+            cancelMenu.Enabled = false;
+
+            gaPhoMai = false;
+            gaCay = false;
+            pizzaHaisan = false;
+            pizzaThapcam = false;
+            thaido = false;
+            thaixanh = false;
+            pepsilemon = false;
+            pepsinormal = false;
+
+            tatTopping.execute();
+
+
+            disableTopping.execute();
+
+
+            batMon.execute();
+
+            addMenu.Enabled = false;
+
+            anNut.execute();
+
+            thanhToan.Hide();
+
+
+
+            mauNut.execute();
+
+            // Hủy cái bảng
+            listMon.Clear();
+            orderGrid.DataSource = "";
+            count = 0;
+           
+        }
+
+        private void thanhtien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void khoaitay_CheckedChanged(object sender, EventArgs e)
         {
             if (khoaitay.Checked)
