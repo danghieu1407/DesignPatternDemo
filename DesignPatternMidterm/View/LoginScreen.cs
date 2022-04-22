@@ -29,7 +29,7 @@ namespace DesignPatternMidterm.View
         }
 
         Modify modify = new Modify();
-
+        public delegate void sendName(TextBox text);
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             //get txtTaiKhoan và txtMatKhau
@@ -59,9 +59,13 @@ namespace DesignPatternMidterm.View
                 {
                     MessageBox.Show("Đăng nhập thành công");
                     //open form MainScreen
-                    this.Close();
+                    //select name from Account
+                    
                     ManageScreen screen1 = new ManageScreen();
+                    sendName name = new sendName(screen1.updateData);
+                    name?.Invoke(this.txtTaiKhoan);
                     screen1.Show();
+                    this.Close();
                 }
                 else
                 {

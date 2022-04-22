@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Timer = System.Windows.Forms.Timer;
 
 namespace DesignPatternMidterm.View
 {
@@ -33,8 +34,8 @@ namespace DesignPatternMidterm.View
         {
 
 
-        }
 
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

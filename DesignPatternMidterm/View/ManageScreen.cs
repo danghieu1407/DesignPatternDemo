@@ -42,5 +42,23 @@ namespace DesignPatternMidterm.View
             //txtWelcome.Text = strings;
 
         }
+
+        public void updateData(TextBox textBox)
+            
+        {
+            string email = textBox.Text;
+            string[] emailSplit = email.Split('@');
+            string emailName = emailSplit[0];
+            this.txtTaiKhoan.Text = "Hello " + emailName;
+        }
+
+        private void lbLogout_Click(object sender, EventArgs e)
+        {
+            //close all forms and open LoginScreen
+            this.Hide();
+            LoginScreen login = new LoginScreen();
+            login.Show();
+          
+        }
     }
 }
