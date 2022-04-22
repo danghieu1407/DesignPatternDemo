@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatternMidterm.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,15 @@ namespace DesignPatternMidterm.View
             KitchenScreen bep = new KitchenScreen();
             bep.ShowDialog();
             this.Show();
+        }
+        Modify modify = new Modify();
+        private void ManageScreen_Load(object sender, EventArgs e)
+        {
+
+            //set text for labels
+            //string strings = modify.Accounts("Select name from Accounts where id = " + LoginScreen.id);
+            //txtWelcome.Text = strings;
+
         }
     }
 }

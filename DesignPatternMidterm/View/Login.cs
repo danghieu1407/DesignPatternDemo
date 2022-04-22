@@ -22,15 +22,25 @@ namespace DesignPatternMidterm.View
         private void btnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            ManageScreen screen1 = new ManageScreen();
-            screen1.ShowDialog();
-            this.Show();
+            //ManageScreen screen1 = new ManageScreen();
+            //screen1.ShowDialog();
+            //this.Show();
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            //open Register
+            Register register = new Register();
+            register.Show();
         }
     }
 }

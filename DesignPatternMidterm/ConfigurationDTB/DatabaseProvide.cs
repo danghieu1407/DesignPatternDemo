@@ -10,7 +10,7 @@ namespace DesignPatternMidtem.ConfigDTB
 {
     public  class DatabaseProvide
     {
-        private  string connectionString = @"Data Source=DESKTOP-ALJPTVE;Initial Catalog=DemoDesignPattern;Integrated SecurityTrue";
+        private  string connectionString = @"Data Source=YUH\SQLEXPRESS;Initial Catalog=DemoDesignPattern;Integrated Security=True";
         private static DatabaseProvide instance;
         private DatabaseProvide() {  }
         public static DatabaseProvide getInstance() //Singleton Pattern
