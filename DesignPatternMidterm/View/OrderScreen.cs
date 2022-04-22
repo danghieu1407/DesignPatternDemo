@@ -95,7 +95,7 @@ namespace DesignPatternMidterm.View
             phoMai.Show();
             cancelMenu.Enabled = true;
 
-            
+
             pizza.Enabled = false;
             pepsi.Enabled = false;
             traSua.Enabled = false;
@@ -119,7 +119,7 @@ namespace DesignPatternMidterm.View
         private void pizza_Click(object sender, EventArgs e)
         {
             cancelMenu.Enabled = true;
-            
+
             pickFood.Text = "";
             pickFood.Text = pickFood.Text + " + Pizza";
 
@@ -227,9 +227,9 @@ namespace DesignPatternMidterm.View
         {
             if (pickFood.Text.Contains("Tương ớt"))
             {
-                
+
                 pickFood.Text = pickFood.Text;
-               
+
             }
             else
             {
@@ -257,16 +257,16 @@ namespace DesignPatternMidterm.View
                 {
                     pickFood.Text = pickFood.Text + " + Tương cà";
                 }
-                
+
                 else
                 {
                     pickFood.Text = pickFood.Text;
                 }
-                
+
             }
         }
 
-        
+
 
 
 
@@ -420,7 +420,7 @@ namespace DesignPatternMidterm.View
                     price = 8000 * parsedValue;
                 }
 
-                
+
                 // tuong ca tuong ot
                 if (tuongca.Checked == true)
                 {
@@ -625,7 +625,7 @@ namespace DesignPatternMidterm.View
 
         private void thanhToan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Tổng hóa đơn là: " + thanhtien.Text +" VNĐ");
+            MessageBox.Show("Tổng hóa đơn là: " + thanhtien.Text + " VNĐ");
             thanhtien.Text = "";
             pickFood.Text = "";
             dongia.Clear();
@@ -663,12 +663,26 @@ namespace DesignPatternMidterm.View
             listMon.Clear();
             orderGrid.DataSource = "";
             count = 0;
-           
+
         }
 
         private void thanhtien_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //close form and open ManageScreen
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //close form and open ManageScreen
+            this.Hide();
+            ManageScreen ms = new ManageScreen();
+            ms.Show();
         }
 
         private void khoaitay_CheckedChanged(object sender, EventArgs e)
@@ -741,7 +755,7 @@ namespace DesignPatternMidterm.View
 
         private void tranChau_CheckedChanged(object sender, EventArgs e)
         {
-            if(pickFood.Text.Contains("Trân châu"))
+            if (pickFood.Text.Contains("Trân châu"))
             {
                 pickFood.Text = pickFood.Text;
             }

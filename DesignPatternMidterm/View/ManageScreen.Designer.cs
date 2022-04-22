@@ -77,6 +77,7 @@
             this.txtTaiKhoan.Size = new System.Drawing.Size(220, 27);
             this.txtTaiKhoan.TabIndex = 8;
             this.txtTaiKhoan.Text = "Hello";
+            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
             // 
             // lbLogout
             // 

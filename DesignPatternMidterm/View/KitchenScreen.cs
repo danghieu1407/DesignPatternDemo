@@ -44,6 +44,15 @@ namespace DesignPatternMidterm.View
             gaCay.BackColor = Color.Green;
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            //close form and open  ManageScreen
+            this.Hide();
+            ManageScreen manageScreen = new ManageScreen();
+            manageScreen.Show();
+
+        }
+
         private void cancel_Click(object sender, EventArgs e)
         {
             vicay = false;

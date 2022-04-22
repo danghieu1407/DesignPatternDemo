@@ -61,6 +61,7 @@
             this.thachDeo = new System.Windows.Forms.CheckBox();
             this.banhFlan = new System.Windows.Forms.CheckBox();
             this.tranChau = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.orderGrid)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -279,7 +280,7 @@
             this.cancelForm.BackColor = System.Drawing.Color.Red;
             this.cancelForm.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cancelForm.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cancelForm.Location = new System.Drawing.Point(1073, 731);
+            this.cancelForm.Location = new System.Drawing.Point(945, 734);
             this.cancelForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cancelForm.Name = "cancelForm";
             this.cancelForm.Size = new System.Drawing.Size(115, 68);
@@ -465,11 +466,26 @@
             this.tranChau.UseVisualStyleBackColor = true;
             this.tranChau.CheckedChanged += new System.EventHandler(this.tranChau_CheckedChanged);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(1087, 734);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 68);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // OrderScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 815);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.cancelMenu);
@@ -534,5 +550,6 @@
         private CheckBox thachDeo;
         private CheckBox banhFlan;
         private CheckBox tranChau;
+        private Button button1;
     }
 }
