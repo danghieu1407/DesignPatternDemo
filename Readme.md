@@ -32,11 +32,11 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
 ### Class Diagram
 ## Kết quả triển khai thực tế 
-## Trang đăng nhập ứng dụng
+### Trang đăng nhập ứng dụng
 ![LoginScreen](https://user-images.githubusercontent.com/80830264/164934048-02c294e3-1abe-4732-9ce3-743635144b06.jpg)
-## Trang đăng ký ứng dụng
+### Trang đăng ký ứng dụng
 ![Register](https://user-images.githubusercontent.com/80830264/164934091-e3123603-9222-43f8-8098-20134c01c06a.jpg)
-## Trang chủ ứng dụng
+### Trang chủ ứng dụng
 Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí tài khoản, Khu bếp.
 ### Với role Admin
 ![MainScreenAdmin](https://user-images.githubusercontent.com/80830264/164915720-87de9768-d295-4f0a-acb3-3eec1d378dbe.jpg)
@@ -44,15 +44,15 @@ Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí
 ![MainScreenStaff](https://user-images.githubusercontent.com/80830264/164915730-1317c08e-b34f-40a5-ad90-500b3e9e2894.jpg)
 ### Với role Customer
 ![MainScreenCustomer](https://user-images.githubusercontent.com/80830264/164915740-0e6f3ab2-dfab-40c5-abe0-1bf74deb4604.jpg)
-## Giao diện đặt món ăn
+### Giao diện đặt món ăn
 Sau khi chọn chức năng Đặt món sẽ có giao diện như hình trên, tại đây có thể chọn các thức ăn hoặc thức uống có trên màn hình, có thể chọn thêm Phần thêm hoặc Topping. Có thể nhập số lượng món ăn cần mua, hiển thị tống giá tiền cần phải thanh toán.
 ![OrderScreen](https://user-images.githubusercontent.com/80830264/164916232-43e494de-2ab1-4bfd-89cb-295529dbde57.jpg)
-## Giao diện chế biến món ăn ở Khu bếp
+### Giao diện chế biến món ăn ở Khu bếp
 Khi chọn Khu bếp sẽ hiển thị giao diện chọn các món ăn chế biến. Khi chọn vào món ăn thì sẽ hiển thị cách thức thực hiện món ăn đó.
 ![KitchenScreen](https://user-images.githubusercontent.com/80830264/164916407-ab2c8df8-f93a-45d9-a5b3-688bf0e89f98.jpg)
 Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống sẽ tiến hành chế biến món ăn.
 ![KitchenScreenSuccess](https://user-images.githubusercontent.com/80830264/164916452-71de1428-f336-41ec-9620-20c2a5d01a72.jpg)
-## Giao diện quản lý tài khoản
+### Giao diện quản lý tài khoản
 Đây là giao diện quản lý tài khoản cho admin. Tại đây admin có thể có các thao tác như Thêm account mới, Sửa thông tin account, xóa account.
 ![ManageAccount](https://user-images.githubusercontent.com/80830264/164917023-fd82c105-b89a-4cd4-9c30-9390a88f3a59.jpg)
 ## Thông tin người phát triển
