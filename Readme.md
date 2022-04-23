@@ -26,9 +26,9 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - **Template Method Pattern**: Template Method Pattern là một quá trình bao gồm các bước theo thứ tự không thay đổi, và cũng có những bước thường xuyên thay đổi tuỳ vào nhu cầu. Do đó ở đây dùng để nêu ra một số phương thức chung dùng để chế biến các món ăn và việc thực hiện cụ thể các món ăn đó được nêu rõ ở mỗi món nêu cụ thể
 ## Chi tiết triển khai
 ## Trang đăng nhập ứng dụng
-![LoginScreen](https://user-images.githubusercontent.com/80830264/164915077-425ab238-78f2-44c4-80bc-35591c5681f8.jpg)
+![LoginScreen](https://user-images.githubusercontent.com/80830264/164934048-02c294e3-1abe-4732-9ce3-743635144b06.jpg)
 ## Trang đăng ký ứng dụng
-![Register](https://user-images.githubusercontent.com/80830264/164915651-867f23b9-b5f8-4943-bc25-b8727176d2de.jpg)
+![Register](https://user-images.githubusercontent.com/80830264/164934091-e3123603-9222-43f8-8098-20134c01c06a.jpg)
 ## Trang chủ ứng dụng
 Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí tài khoản, Khu bếp
 ### Với role Admin
