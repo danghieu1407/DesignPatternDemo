@@ -36,13 +36,14 @@
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.chkRemember = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(204, 63);
+            this.label1.Location = new System.Drawing.Point(100, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(554, 62);
             this.label1.TabIndex = 0;
@@ -51,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(236, 193);
+            this.label2.Location = new System.Drawing.Point(136, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 1;
@@ -60,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(236, 247);
+            this.label3.Location = new System.Drawing.Point(137, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 20);
             this.label3.TabIndex = 2;
@@ -68,22 +69,22 @@
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(331, 186);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(245, 154);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(244, 27);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(308, 27);
             this.txtTaiKhoan.TabIndex = 3;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(331, 247);
+            this.txtMatKhau.Location = new System.Drawing.Point(245, 233);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(244, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(308, 27);
             this.txtMatKhau.TabIndex = 4;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(331, 325);
+            this.btnLogIn.Location = new System.Drawing.Point(236, 341);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(94, 29);
             this.btnLogIn.TabIndex = 5;
@@ -93,9 +94,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(481, 325);
+            this.btnExit.Location = new System.Drawing.Point(437, 341);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(94, 29);
+            this.btnExit.Size = new System.Drawing.Size(116, 29);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -104,18 +105,30 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(331, 291);
+            this.label4.Location = new System.Drawing.Point(437, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Quên mật khẩu?";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // chkRemember
+            // 
+            this.chkRemember.AutoSize = true;
+            this.chkRemember.Location = new System.Drawing.Point(245, 283);
+            this.chkRemember.Name = "chkRemember";
+            this.chkRemember.Size = new System.Drawing.Size(124, 24);
+            this.chkRemember.TabIndex = 8;
+            this.chkRemember.Text = "Nhớ tài khoản";
+            this.chkRemember.UseVisualStyleBackColor = true;
+            this.chkRemember.CheckedChanged += new System.EventHandler(this.chkRemember_CheckedChanged);
+            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.ClientSize = new System.Drawing.Size(705, 420);
+            this.Controls.Add(this.chkRemember);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogIn);
@@ -142,5 +155,6 @@
         private Button btnLogIn;
         private Button btnExit;
         private Label label4;
+        private CheckBox chkRemember;
     }
 }
