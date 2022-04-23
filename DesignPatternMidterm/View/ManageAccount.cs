@@ -16,5 +16,10 @@ namespace DesignPatternMidterm.View
         {
             InitializeComponent();
         }
+
+        private void ManageAccount_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

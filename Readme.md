@@ -1,6 +1,6 @@
 # TIỂU LUẬN DESIGN PATTERN
 ## Giới thiệu về ứng dụng
-- Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàng bán đồ ăn nhanh đã qua quen thuộc với mọi người, vì thế việc ra đời app đặt đồ ăn nhanh đã trở nên quan trọng hơn. Nhóm chúng em chọn ra một cách để giới thiệu ứng dụng này là: "App đặt đồ ăn nhanh bá cháy". App này có nhiệm vụ là giúp người dùng có thể đặt đồ ăn nhanh vào cửa hàng bán đồ ăn nhanh. Để tối ưu hóa hệ thống, app đã sử dụng các design pattern mà chúng em đã từng học để thiết kế.
+Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàng bán đồ ăn nhanh đã qua quen thuộc với mọi người, vì thế việc ra đời app đặt đồ ăn nhanh đã trở nên quan trọng hơn. Nhóm chúng em chọn ra một cách để giới thiệu ứng dụng này là: "App đặt đồ ăn nhanh bá cháy". App này có nhiệm vụ là giúp người dùng có thể đặt đồ ăn nhanh vào cửa hàng bán đồ ăn nhanh. Để tối ưu hóa hệ thống, app đã sử dụng các design pattern mà chúng em đã từng học để thiết kế.
 ## Yêu cầu thư viện, tool hỗ trợ, database
 - Thư viện sử dụng: 
 - IDE: Visual Studio
