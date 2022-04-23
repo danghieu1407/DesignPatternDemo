@@ -48,8 +48,7 @@ namespace DesignPatternMidterm.View
         {
             //close form and open  ManageScreen
             this.Hide();
-            ManageScreen manageScreen = new ManageScreen();
-            manageScreen.Show();
+           
 
         }
 

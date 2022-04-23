@@ -29,7 +29,8 @@ namespace DesignPatternMidterm.View
         }
 
         Modify modify = new Modify();
-        public delegate void sendName(TextBox text);
+        public delegate void sendName(string name);
+        public delegate void sendRole(int role);
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             //get txtTaiKhoan và txtMatKhau
@@ -60,10 +61,13 @@ namespace DesignPatternMidterm.View
                     MessageBox.Show("Đăng nhập thành công");
                     //open form MainScreen
                     //select name from Account
-                    
+                    int role = modify.Accounts(query)[0].Role;
+                    string __name = modify.Accounts(query)[0].Name;
                     ManageScreen screen1 = new ManageScreen();
                     sendName name = new sendName(screen1.updateData);
-                    name?.Invoke(this.txtTaiKhoan);
+                    name?.Invoke(__name);
+                    sendRole roles = new sendRole(screen1.updateRole);
+                    roles?.Invoke(role);
                     screen1.Show();
                     this.Close();
                 }
@@ -78,7 +82,12 @@ namespace DesignPatternMidterm.View
 
         private void LoginScreen_Load(object sender, EventArgs e)
         {
-
+            txtTaiKhoan.Text = Properties.Settings.Default.TaiKhoan;
+            txtMatKhau.Text = Properties.Settings.Default.MatKhau;
+            if (Properties.Settings.Default.TaiKhoan != "" && Properties.Settings.Default.MatKhau != "")
+            {
+                chkRemember.Checked = true;
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -88,6 +97,25 @@ namespace DesignPatternMidterm.View
             //open ForgotPassword
             ForgotPassword forgot = new ForgotPassword();
             forgot.Show();
+        }
+
+        private void chkRemember_CheckedChanged(object sender, EventArgs e)
+        {
+            string taiKhoan = txtTaiKhoan.Text;
+            string matKhau = txtMatKhau.Text;
+            if (taiKhoan != "" && matKhau != "")
+            {
+                if (chkRemember.Checked == true)
+                {
+                    Properties.Settings.Default.TaiKhoan = taiKhoan;
+                    Properties.Settings.Default.MatKhau = matKhau;
+                    Properties.Settings.Default.Save();
+                }
+                else
+                {
+                    Properties.Settings.Default.Reset();
+                }
+            }
         }
     }
 }

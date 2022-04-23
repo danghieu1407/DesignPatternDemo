@@ -671,18 +671,12 @@ namespace DesignPatternMidterm.View
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //close form and open ManageScreen
-            
-        }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             //close form and open ManageScreen
             this.Hide();
-            ManageScreen ms = new ManageScreen();
-            ms.Show();
+            
         }
 
         private void khoaitay_CheckedChanged(object sender, EventArgs e)

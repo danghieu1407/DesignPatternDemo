@@ -31,8 +31,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnKitchen = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
-            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.lbLogout = new System.Windows.Forms.Label();
+            this.lbIntro = new System.Windows.Forms.Label();
+            this.btnManage = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,15 +71,6 @@
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
-            // txtTaiKhoan
-            // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(12, 12);
-            this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(220, 27);
-            this.txtTaiKhoan.TabIndex = 8;
-            this.txtTaiKhoan.Text = "Hello";
-            this.txtTaiKhoan.TextChanged += new System.EventHandler(this.txtTaiKhoan_TextChanged);
-            // 
             // lbLogout
             // 
             this.lbLogout.AutoSize = true;
@@ -89,13 +81,32 @@
             this.lbLogout.Text = "Đăng xuất";
             this.lbLogout.Click += new System.EventHandler(this.lbLogout_Click);
             // 
+            // lbIntro
+            // 
+            this.lbIntro.AutoSize = true;
+            this.lbIntro.Location = new System.Drawing.Point(12, 19);
+            this.lbIntro.Name = "lbIntro";
+            this.lbIntro.Size = new System.Drawing.Size(50, 20);
+            this.lbIntro.TabIndex = 10;
+            this.lbIntro.Text = "label1";
+            // 
+            // btnManage
+            // 
+            this.btnManage.Location = new System.Drawing.Point(299, 297);
+            this.btnManage.Name = "btnManage";
+            this.btnManage.Size = new System.Drawing.Size(317, 100);
+            this.btnManage.TabIndex = 11;
+            this.btnManage.Text = "Quản lý tài khoản";
+            this.btnManage.UseVisualStyleBackColor = true;
+            // 
             // ManageScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.btnManage);
+            this.Controls.Add(this.lbIntro);
             this.Controls.Add(this.lbLogout);
-            this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ManageScreen";
@@ -112,7 +123,8 @@
         private Panel panel1;
         private Button btnKitchen;
         private Button btnOrder;
-        private TextBox txtTaiKhoan;
         private Label lbLogout;
+        private Label lbIntro;
+        private Button btnManage;
     }
 }

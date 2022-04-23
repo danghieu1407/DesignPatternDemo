@@ -34,23 +34,44 @@ namespace DesignPatternMidterm.View
             this.Show();
         }
         Modify modify = new Modify();
+        public void updateData(string name)
+
+        {
+            lbIntro.Text = "Hello " + name;
+        }
+        int temp;
+        //updateRole
+        public void updateRole(int role)
+        {
+            temp = role;
+        }
         private void ManageScreen_Load(object sender, EventArgs e)
         {
 
-            //set text for labels
-            //string strings = modify.Accounts("Select name from Accounts where id = " + LoginScreen.id);
-            //txtWelcome.Text = strings;
+            if (temp == 3)
+            {
+                btnOrder.Enabled = true;
+                btnKitchen.Enabled = true;
+                btnManage.Enabled = true;
+            }
+            else if (temp == 1)
+            {
+                //hide button
+                btnOrder.Enabled = true;
+                btnKitchen.Enabled = true;
+                btnManage.Hide();
+
+            }
+            else
+            {
+                btnOrder.Enabled = true;
+                btnKitchen.Hide();
+                btnManage.Hide();
+            }
 
         }
 
-        public void updateData(TextBox textBox)
-            
-        {
-            string email = textBox.Text;
-            string[] emailSplit = email.Split('@');
-            string emailName = emailSplit[0];
-            this.txtTaiKhoan.Text = "Hello " + emailName;
-        }
+       
 
         private void lbLogout_Click(object sender, EventArgs e)
         {
@@ -61,10 +82,6 @@ namespace DesignPatternMidterm.View
           
         }
 
-        private void txtTaiKhoan_TextChanged(object sender, EventArgs e)
-        {
-            //disabled
-            txtTaiKhoan.Enabled = false;
-        }
+       
     }
 }
