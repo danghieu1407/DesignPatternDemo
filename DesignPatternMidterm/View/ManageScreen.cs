@@ -82,6 +82,14 @@ namespace DesignPatternMidterm.View
           
         }
 
-       
+        private void btnManage_Click(object sender, EventArgs e)
+        {
+            //close and open ManageAccount
+            this.Hide();
+            ManageAccount manage = new ManageAccount();
+          
+            manage.ShowDialog();
+            this.Show();
+        }
     }
 }

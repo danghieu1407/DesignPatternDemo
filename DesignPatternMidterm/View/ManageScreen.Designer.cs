@@ -98,6 +98,7 @@
             this.btnManage.TabIndex = 11;
             this.btnManage.Text = "Quản lý tài khoản";
             this.btnManage.UseVisualStyleBackColor = true;
+            this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
             // 
             // ManageScreen
             // 

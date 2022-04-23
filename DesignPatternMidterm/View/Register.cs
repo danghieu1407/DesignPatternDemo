@@ -76,7 +76,12 @@ namespace DesignPatternMidterm.View
                    MessageBox.Show("Tài khoản đã tồn tại");
                     return;
                 }
-
+                //test checkbox
+                if(chkAgree.Checked == false)
+                {
+                    MessageBox.Show("Vui lòng đồng ý với điều khoản của ứng dụng");
+                    return;
+                }
                 try
                 {
                     modify.Accounts("Insert into Account(name, password, email) values('" + txtUsername.Text + "','" + txtPWD.Text + "','" + txtEmail.Text + "')");
@@ -91,6 +96,11 @@ namespace DesignPatternMidterm.View
                 }
 
             }
+        }
+
+        private void chkAgree_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

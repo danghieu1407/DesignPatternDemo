@@ -39,11 +39,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.chkAgree = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnDangKy
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(267, 434);
+            this.btnDangKy.Location = new System.Drawing.Point(267, 473);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(94, 29);
             this.btnDangKy.TabIndex = 1;
@@ -53,7 +54,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(473, 425);
+            this.button2.Location = new System.Drawing.Point(478, 473);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 2;
@@ -105,9 +106,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(104, 227);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 20);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Tên đăng nhập:";
+            this.label3.Text = "Họ và Tên:";
             // 
             // label4
             // 
@@ -138,11 +139,23 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "App đặt đồ ăn BÁ CHÁY";
             // 
+            // chkAgree
+            // 
+            this.chkAgree.AutoSize = true;
+            this.chkAgree.Location = new System.Drawing.Point(185, 414);
+            this.chkAgree.Name = "chkAgree";
+            this.chkAgree.Size = new System.Drawing.Size(297, 24);
+            this.chkAgree.TabIndex = 12;
+            this.chkAgree.Text = "Tôi đồng ý với điều khoản của ứng dụng";
+            this.chkAgree.UseVisualStyleBackColor = true;
+            this.chkAgree.CheckedChanged += new System.EventHandler(this.chkAgree_CheckedChanged);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(727, 531);
+            this.Controls.Add(this.chkAgree);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -174,5 +187,6 @@
         private Label label4;
         private Label label5;
         private Label label1;
+        private CheckBox chkAgree;
     }
 }
