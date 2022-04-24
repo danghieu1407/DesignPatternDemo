@@ -10,6 +10,9 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - Mở folder ```DesignPatternDemo```, double click vào file ``` DesignPatternMidterm.sln``` và chọn mở bằng Visual Studio để mở project.
 - Đăng nhập vào SQL Server bằng chế độ ```SQL Server Authentication``` và import database từ file ```DemoDatabase.sql``` vào SQL Server.
 - Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và chọn tên database là ```DemoDatabase``` ở mục ```Server Name```.
+- Ở phần Properties, chọn và copy Connection String.
+
+  ![ConnecttionString](https://user-images.githubusercontent.com/80830264/164960555-7666937a-64dc-4e7c-8ff0-66c5b374f7e4.jpg)
 - Nhấn ```F5``` để chạy project.
 ## Các kiến thức về patterns và lý do ứng dụng patterns
 ### Các kiến thức về patterns
@@ -30,6 +33,7 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - Người dùng: Có thể đăng nhập, đăng ký, quên mật khẩu và order món ăn.
 - Nhân viên: Có các chức năng của người dùng và có thể chế biến món ăn.
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
+### Usecase Diagram
 ### Class Diagram
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
