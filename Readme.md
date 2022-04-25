@@ -3,16 +3,20 @@
 Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàng bán đồ ăn nhanh đã qua quen thuộc với mọi người, vì thế việc ra đời app đặt đồ ăn nhanh đã trở nên quan trọng hơn. Nhóm chúng em chọn ra một cách để giới thiệu ứng dụng này là: "App đặt đồ ăn nhanh bá cháy". App này có nhiệm vụ là giúp người dùng có thể đặt đồ ăn nhanh vào cửa hàng bán đồ ăn nhanh. Để tối ưu hóa hệ thống, app đã sử dụng các design pattern mà chúng em đã từng học để thiết kế.
 ## Yêu cầu thư viện, tool hỗ trợ, database
 - Thư viện sử dụng: System.Text.RegularExpressions, System.Data
-- IDE: Visual Studio
-- Database: Microsoft SQL Server Management Studio
+- IDE: Visual Studio, Microsoft SQL Server Management Studio
+- Database: SQL
 ## Cách khởi chạy
 - Clone project từ link: [Github](https://github.com/danghieu1407/DesignPatternDemo.git) bằng cách mở cmd và nhập lệnh ```git clone https://github.com/danghieu1407/DesignPatternDemo.git``` về máy của bạn.
 - Mở folder ```DesignPatternDemo```, double click vào file ``` DesignPatternMidterm.sln``` và chọn mở bằng Visual Studio để mở project.
 - Đăng nhập vào SQL Server bằng chế độ ```SQL Server Authentication``` và import database từ file ```DemoDatabase.sql``` vào SQL Server.
-- Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và chọn tên database là ```DemoDatabase``` ở mục ```Server Name```.
+- Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và nhập tên server ở mục ```Server Name```, chọn tên database là ```DemoDatabase``` ở mục ```Select or enter a database name```.
+
+  ![SQLConnect](https://user-images.githubusercontent.com/80830264/165013246-ab60d127-9351-421d-a6ad-9d6f08573c89.jpg)
+
 - Ở phần Properties, chọn và copy Connection String.
 
   ![ConnecttionString](https://user-images.githubusercontent.com/80830264/164960555-7666937a-64dc-4e7c-8ff0-66c5b374f7e4.jpg)
+- Đổi ```Connection String``` ở file ./ConfigurationDTB/DatabaseProvide.cs dòng số 13 và ./Controller/Modify.cs dòng 16.
 - Nhấn ```F5``` để chạy project.
 ## Các kiến thức về patterns và lý do ứng dụng patterns
 ### Các kiến thức về patterns
