@@ -95,8 +95,8 @@ insert BanAn(name_table, status_table) values (N'Bàn 20','0')
 
 
 
-insert Account(email,name,role) values ('phuchuy@gmail.com',N'Đặng Phúc Huy','1')
-insert Account(email,name) values ('giangdein@gmail.com',N'Giang Vinh Diễn')
-insert Account(email,name) values ('danghieu@gmail.com',N'Nguyễn Đặng Hiếu')
-insert Account(email,name) values ('giahuy@gmail.com',N'Trần Gia Huy')
+insert Account(email,name,role) values ('PH01@gmail.com',N'Đặng Phúc Huy',3)
+insert Account(email,name,role) values ('GD02@gmail.com',N'Giang Vinh Diễn',1)
+insert Account(email,name) values ('DH03@gmail.com',N'Nguyễn Đặng Hiếu')
+insert Account(email,name) values ('GH04@gmail.com',N'Trần Gia Huy')
 

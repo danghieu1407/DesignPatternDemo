@@ -13,13 +13,13 @@ namespace DesignPatternMidterm.Controller
         SqlCommand sqlCommand;
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        
+        string connection = @"Data Source=YUH\SQLEXPRESS;
+                    Initial Catalog=DemoDesignPattern;Integrated Security=True";
        //get data from database
        public List<Account> Accounts(string query)
        {
             List<Account> accounts = new List<Account>();
-            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True"))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand(query, sqlConnection);
@@ -39,8 +39,7 @@ namespace DesignPatternMidterm.Controller
         public List<Account> GetAccounts()
         {
             List<Account> accounts = new List<Account>();
-            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True"))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand("SELECT * FROM Account", sqlConnection);
@@ -60,8 +59,7 @@ namespace DesignPatternMidterm.Controller
         //insert account to database
         public void InsertAccount(string username, string password, string email)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True"))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
                 //check if username is exist
@@ -84,7 +82,7 @@ namespace DesignPatternMidterm.Controller
                     sqlCommand.Parameters.AddWithValue("@password", password);
                     sqlCommand.Parameters.AddWithValue("@role", 0);
 
-                    sqlCommand.ExecuteNonQuery();
+                    //sqlCommand.ExecuteNonQuery();
 
                     //close
                     sqlConnection.Close();
@@ -97,8 +95,7 @@ namespace DesignPatternMidterm.Controller
         //delete account from database
         public void DeleteAccount(string email)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True"))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand("DELETE FROM Account WHERE email = @email", sqlConnection);
@@ -114,8 +111,7 @@ namespace DesignPatternMidterm.Controller
         //update account in database
         public void UpdateAccount(string username, string password, string email)
         {
-            using (SqlConnection sqlConnection = new SqlConnection(@"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True"))
+            using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand("UPDATE Account SET email = @email, password = @password WHERE name = @username", sqlConnection);
