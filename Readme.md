@@ -3,13 +3,20 @@
 Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàng bán đồ ăn nhanh đã qua quen thuộc với mọi người, vì thế việc ra đời app đặt đồ ăn nhanh đã trở nên quan trọng hơn. Nhóm chúng em chọn ra một cách để giới thiệu ứng dụng này là: "App đặt đồ ăn nhanh bá cháy". App này có nhiệm vụ là giúp người dùng có thể đặt đồ ăn nhanh vào cửa hàng bán đồ ăn nhanh. Để tối ưu hóa hệ thống, app đã sử dụng các design pattern mà chúng em đã từng học để thiết kế.
 ## Yêu cầu thư viện, tool hỗ trợ, database
 - Thư viện sử dụng: System.Text.RegularExpressions, System.Data
-- IDE: Visual Studio
-- Database: Microsoft SQL Server Management Studio
+- IDE: Visual Studio, Microsoft SQL Server Management Studio
+- Database: SQL
 ## Cách khởi chạy
 - Clone project từ link: [Github](https://github.com/danghieu1407/DesignPatternDemo.git) bằng cách mở cmd và nhập lệnh ```git clone https://github.com/danghieu1407/DesignPatternDemo.git``` về máy của bạn.
 - Mở folder ```DesignPatternDemo```, double click vào file ``` DesignPatternMidterm.sln``` và chọn mở bằng Visual Studio để mở project.
 - Đăng nhập vào SQL Server bằng chế độ ```SQL Server Authentication``` và import database từ file ```DemoDatabase.sql``` vào SQL Server.
-- Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và chọn tên database là ```DemoDatabase``` ở mục ```Server Name```.
+- Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và nhập tên server ở mục ```Server Name```, chọn tên database là ```DemoDatabase``` ở mục ```Select or enter a database name```.
+
+  ![SQLConnect](https://user-images.githubusercontent.com/80830264/165013246-ab60d127-9351-421d-a6ad-9d6f08573c89.jpg)
+
+- Ở phần Properties, chọn và copy Connection String.
+
+  ![ConnecttionString](https://user-images.githubusercontent.com/80830264/164960555-7666937a-64dc-4e7c-8ff0-66c5b374f7e4.jpg)
+- Đổi ```Connection String``` ở file ./ConfigurationDTB/DatabaseProvide.cs dòng số 13 và ./Controller/Modify.cs dòng 16.
 - Nhấn ```F5``` để chạy project.
 ## Các kiến thức về patterns và lý do ứng dụng patterns
 ### Các kiến thức về patterns
@@ -20,7 +27,7 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - **Template Method Pattern**: Là một trong những Pattern thuộc nhóm hành vi (Behavior Pattern). Pattern này nói rằng “Định nghĩa một bộ khung của một thuật toán trong một chức năng, chuyển giao việc thực hiện nó cho các lớp con.
 ### Lý do ứng dụng patterns
 - **Singleton Pattern**: Khi sử dụng thì không nên để quá nhiều chức năng, cũng như tạo quá nhiều thực thể kết nối. Do đó Singleton Pattern áp dụng vào đây thì hợp lí, tất cả chức năng nên sử dụng chung một thực thể kết nối.
-- **Decorator Pattern**: Decorator Pattern phù hợp với các việc có sự thay đổi, ở đây sự thay đổi là khi thêm Phần thêm hoặc Topping(tuỳ theo sở thích mà khách hàng lựa chọn có hoặc không, hay có thể là cửa hàng có thêm Phần thêm hoặc Topping khác) dù có thay đổi thì cũng không gây ảnh hưởng đến các lớp cũ .Trong bài, Decorator dùng để bổ sung một số thức ăn là Phần thêm, Topping cho món ăn hoặc thức uống. Ở đây, thực đơn chia làm 6 món, trong đó có 3 món được áp dụng Decorator vào đó là Gà rán và Trà sữa. Decorator được dụng để thêm các Topping cho món ăn hoặc thức uống(món ăn là Gà rán, thức thuốc là Trà sữa).
+- **Decorator Pattern**: Decorator Pattern phù hợp với các việc có sự thay đổi, ở đây sự thay đổi là khi thêm Phần thêm hoặc Topping(tuỳ theo sở thích mà khách hàng lựa chọn có hoặc không, hay có thể là cửa hàng có thêm Phần thêm hoặc Topping khác) dù có thay đổi thì cũng không gây ảnh hưởng đến các lớp cũ .Trong bài, Decorator dùng để bổ sung một số thức ăn là Phần thêm, Topping cho món ăn hoặc thức uống. Ở đây, thực đơn chia làm 6 món, trong đó có 3 món được áp dụng Decorator vào đó là Gà rán và Trà sữa. Decorator được dụng để thêm các Topping cho món ăn hoặc thức uống(món ăn là Gà rán, thức uống là Trà sữa).
 - **MVC Pattern**: Áp dụng MVC (Model - View - Controller) để dễ dàng thao tác dữ liệu giữa Frontend và Backend, dễ dàng hơn trong việc kiểm tra, phát hiện lỗi để đảm bảo chất lượng phần mềm có kết quả cao hơn.
 - **Command Pattern**: Dùng để quản lý các nút chọn món ở trong phần đặt món. Command Pattern trong bài này có nhiệm vụ làm cho một số nút cùng Enable, Disable, đổi về cùng một màu, ẩn nút và hiện nút. Điều này giúp cho viêc lập trình bớt phức tạp và không còn bị thiếu hoặc thừa câu lệnh về nút (ví dụ như quên Enable nút hoặc Disable nhầm nút).
 - **Template Method Pattern**: Template Method Pattern là một quá trình bao gồm các bước theo thứ tự không thay đổi, và cũng có những bước thường xuyên thay đổi tuỳ vào nhu cầu. Do đó ở đây dùng để nêu ra một số phương thức chung dùng để chế biến các món ăn và việc thực hiện cụ thể các món ăn đó được nêu rõ ở mỗi món nêu cụ thể.
@@ -30,11 +37,14 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - Người dùng: Có thể đăng nhập, đăng ký, quên mật khẩu và order món ăn.
 - Nhân viên: Có các chức năng của người dùng và có thể chế biến món ăn.
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
+### Usecase Diagram
 ### Class Diagram
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
+Người dùng nhập username và password để đăng nhập vào hệ thống, họ cũng có thể chọn nhớ tài khoản cho lần đăng nhập tiếp theo mà không cần nhập lại tài khoản. Nếu người dùng quên mật khẩu thì có thể chọn nút quên mật khẩu và nhập thông tin cần thiết để lấy lại mất khẩu.
 ![LoginScreen](https://user-images.githubusercontent.com/80830264/164934048-02c294e3-1abe-4732-9ce3-743635144b06.jpg)
 ### Trang đăng ký ứng dụng
+Người dùng nhập các thông tin cần thiết để đăng ký tài khoản nhằm mục đích sử dụng hệ thống.
 ![Register](https://user-images.githubusercontent.com/80830264/164934091-e3123603-9222-43f8-8098-20134c01c06a.jpg)
 ### Trang chủ ứng dụng
 Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí tài khoản, Khu bếp.
