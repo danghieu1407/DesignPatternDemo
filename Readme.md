@@ -38,6 +38,8 @@ Trong thời đại 4.0 hiện nay, việc order đồ ăn tại các cửa hàn
 - Nhân viên: Có các chức năng của người dùng và có thể chế biến món ăn.
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
 ### Usecase Diagram
+![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
+
 ### Class Diagram
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
