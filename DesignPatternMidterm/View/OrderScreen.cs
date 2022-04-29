@@ -625,7 +625,7 @@ namespace DesignPatternMidterm.View
 
         private void thanhToan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Tổng hóa đơn là: " + thanhtien.Text + " VNĐ");
+            MessageBox.Show("Số tiền bạn cần thanh toán là: " + thanhtien.Text + " VNĐ" +". Vui lòng chuẩn bị đủ tiền để thanh toán cho shipper.");
             thanhtien.Text = "";
             pickFood.Text = "";
             dongia.Clear();
