@@ -39,6 +39,10 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 - Người dùng: Có thể đăng nhập, đăng ký, quên mật khẩu và order món ăn.
 - Nhân viên: Có các chức năng của người dùng và có thể chế biến món ăn.
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
+Account dùng trong ứng dụng:
+- Account Admin: Email: PH123@gmail.com - Password: 123456
+- Account Staff: Email: GD123@gmail.com - Password: GD1234
+- Account Customer: Email: DH123@gmail.com - Password: DH1234
 ### Usecase Diagram
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
 
