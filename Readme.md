@@ -44,35 +44,58 @@ Account dùng trong ứng dụng:
 - Account Staff: Email: GD123@gmail.com - Password: GD1234
 - Account Customer: Email: DH123@gmail.com - Password: DH1234
 ### Usecase Diagram
+
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
 
 ### Class Diagram
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
 Người dùng nhập username và password để đăng nhập vào hệ thống, họ cũng có thể chọn nhớ tài khoản cho lần đăng nhập tiếp theo mà không cần nhập lại tài khoản. Nếu người dùng quên mật khẩu thì có thể chọn nút quên mật khẩu và nhập thông tin cần thiết để lấy lại mất khẩu.
+
 ![LoginScreen](https://user-images.githubusercontent.com/80830264/164934048-02c294e3-1abe-4732-9ce3-743635144b06.jpg)
+
 ### Trang đăng ký ứng dụng
 Người dùng nhập các thông tin cần thiết để đăng ký tài khoản nhằm mục đích sử dụng hệ thống.
+
 ![Register](https://user-images.githubusercontent.com/80830264/164934091-e3123603-9222-43f8-8098-20134c01c06a.jpg)
+
 ### Trang chủ ứng dụng
 Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí tài khoản, Khu bếp.
 ### Với role Admin
+
 ![MainScreenAdmin](https://user-images.githubusercontent.com/80830264/164915720-87de9768-d295-4f0a-acb3-3eec1d378dbe.jpg)
+
 ### Với role Staff
+
 ![MainScreenStaff](https://user-images.githubusercontent.com/80830264/164915730-1317c08e-b34f-40a5-ad90-500b3e9e2894.jpg)
+
 ### Với role Customer
+
 ![MainScreenCustomer](https://user-images.githubusercontent.com/80830264/164915740-0e6f3ab2-dfab-40c5-abe0-1bf74deb4604.jpg)
+
 ### Giao diện đặt món ăn
 Sau khi chọn chức năng Đặt món sẽ có giao diện như hình trên, tại đây có thể chọn các thức ăn hoặc thức uống có trên màn hình, có thể chọn thêm Phần thêm hoặc Topping. Có thể nhập số lượng món ăn cần mua, hiển thị tống giá tiền cần phải thanh toán.
+
 ![OrderScreen](https://user-images.githubusercontent.com/80830264/164916232-43e494de-2ab1-4bfd-89cb-295529dbde57.jpg)
+
+Say khi chọn món ấn đặt hàng. Hệ thống sẽ hiện lên số tiền bạn cần thanh toàn và yêu cầu bạn chuẩn bị đầy đủ số tiền để trả cho shipper.
+
+![OrderScreenComplete](https://user-images.githubusercontent.com/80830264/168463175-51104780-4ed8-47a4-86ef-72947e36139d.jpg)
+
 ### Giao diện chế biến món ăn ở Khu bếp
 Khi chọn Khu bếp sẽ hiển thị giao diện chọn các món ăn chế biến. Khi chọn vào món ăn thì sẽ hiển thị cách thức thực hiện món ăn đó.
+
 ![KitchenScreen](https://user-images.githubusercontent.com/80830264/164916407-ab2c8df8-f93a-45d9-a5b3-688bf0e89f98.jpg)
+
 Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống sẽ tiến hành chế biến món ăn.
+
 ![KitchenScreenSuccess](https://user-images.githubusercontent.com/80830264/164916452-71de1428-f336-41ec-9620-20c2a5d01a72.jpg)
+
 ### Giao diện quản lý tài khoản
 Đây là giao diện quản lý tài khoản cho admin. Tại đây admin có thể có các thao tác như Thêm account mới, Sửa thông tin account, xóa account.
+
 ![ManageAccount](https://user-images.githubusercontent.com/80830264/164917023-fd82c105-b89a-4cd4-9c30-9390a88f3a59.jpg)
+
 ## Thông tin người phát triển
 - Nguyen Dang Hieu - 51900073
 - Giang Vinh Dien - 51900035
