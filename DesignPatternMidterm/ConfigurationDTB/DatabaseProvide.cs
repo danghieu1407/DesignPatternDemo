@@ -10,9 +10,19 @@ namespace DesignPatternMidtem.ConfigDTB
 {
     public  class DatabaseProvide
     {
-        private  string connectionString = @"Data Source=YUH\SQLEXPRESS;Initial Catalog=DemoDesignPattern;Integrated Security=True";
+        public static string connectionString = @"Data Source=YUH\SQLEXPRESS;Initial Catalog=DemoDesignPattern;Integrated Security=True";
         private static DatabaseProvide instance;
-        private DatabaseProvide() {  }
+        public DatabaseProvide() {  }
+
+        public static string ConnectionString()
+        {
+            return connectionString;
+        }
+
+        //get set connectionString
+  
+
+
         public static DatabaseProvide getInstance() //Singleton Pattern
         {
             if (instance == null)

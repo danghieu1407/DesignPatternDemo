@@ -1,6 +1,8 @@
 ﻿using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Data;
+using DesignPatternMidtem.ConfigDTB;
+using DesignPatternMidterm.Model;
 
 namespace DesignPatternMidterm.Controller
 {
@@ -13,10 +15,10 @@ namespace DesignPatternMidterm.Controller
         SqlCommand sqlCommand;
         SqlConnection sqlConnection;
         SqlDataReader sqlDataReader;
-        string connection = @"Data Source=YUH\SQLEXPRESS;
-                    Initial Catalog=DemoDesignPattern;Integrated Security=True";
-       //get data from database
-       public List<Account> Accounts(string query)
+        //getConnectionString() from DatabaseProvide in ConfigurationDTB
+        string connection = DatabaseProvide.ConnectionString();
+        //get data from database
+        public List<Account> Accounts(string query)
        {
             List<Account> accounts = new List<Account>();
             using (SqlConnection sqlConnection = new SqlConnection(connection))

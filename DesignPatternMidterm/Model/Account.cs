@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternMidterm.Controller
+namespace DesignPatternMidterm.Model
 {
     internal class Account
     {
