@@ -2,6 +2,8 @@
 ## Giới thiệu về ứng dụng
 Bumba là thương hiệu trà sữa có nguồn gốc thương hiệu tại Việt Nam. Nguyên vật liệu được kiểm duyệt và nhập khẩu từ Singapore và Đài Loan. Là thương hiệu đại
 diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng đầu tiên Bumba ra đời vào năm 2012, mang phong cách loại hình takeaway - trà sữa mang đi, mô hình được ưa chuộng nhất lúc đó. Năm 2013 chính thức thành lập công ty CP TMDV Chào Ngày Mới và đến 2017 công ty nhận vốn góp từ công ty TNHH DIOS Investment Vina - một quỹ đầu tư trực tiếp vốn 100% từ Hàn Quốc. Trước đó bằng hình thức chuyển nhượng thương hiệu, Bumba đã thành công với iệc sỡ hữu 33 cửa hàng trên toàn quốc chủ yếu ở các thành phố lớn như TP. Hồ Chí inh, Đà Nẵng, Hà Nội. Sau khi kết hợp cùng công ty DIOS, Bumba chính thức mở rộng thêm 11 cửa hàng ở các tỉnh thành: Quảng Ninh, Bình Dương, Vũng Tàu..Với châm ngôn tuyệt đối không sử dụng nguyên liệu không rõ nguồn gốc xuất xứ, trà sữa Bumba tự hào mang lại cho khách hàng những sản phẩm chất lượng nhất. Buba luôn cảm kích về sự tin dùng và dễ thương của quý khách hàng. Một trong những điều làm nên thương hiệu của Bumbap là việc order có thể diễn ra một cách trực tuyến ,nhanh gọn, an toàn và tiện lợi nhờ vào app quản lý đặt đồ ăn nhanh do đội ngũ dev gồm 4 thành viên phát triển.
+## Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng
+
 ## Yêu cầu thư viện, tool hỗ trợ, database
 - Thư viện sử dụng: System.Text.RegularExpressions, System.Data
 - IDE: Visual Studio, Microsoft SQL Server Management Studio
