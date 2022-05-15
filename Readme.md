@@ -16,7 +16,8 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 
 - Ở phần Properties, chọn và copy Connection String.
 
-  ![ConnecttionString](https://user-images.githubusercontent.com/80830264/164960555-7666937a-64dc-4e7c-8ff0-66c5b374f7e4.jpg)
+ ![ConnecttionString](https://user-images.githubusercontent.com/80830264/168459178-a0a07334-6a50-4ccd-99dd-efc162b59f7b.jpg)
+
 - Đổi ```Connection String``` ở file ./ConfigurationDTB/DatabaseProvide.cs dòng số 13.
 - Nhấn ```F5``` để chạy project.
 ## Các kiến thức về patterns và lý do ứng dụng patterns
