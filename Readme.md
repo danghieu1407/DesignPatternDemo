@@ -50,6 +50,9 @@ Account dùng trong ứng dụng:
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
 
 ### Class Diagram
+
+![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
+
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
 Người dùng nhập username và password để đăng nhập vào hệ thống, họ cũng có thể chọn nhớ tài khoản cho lần đăng nhập tiếp theo mà không cần nhập lại tài khoản. Nếu người dùng quên mật khẩu thì có thể chọn nút quên mật khẩu và nhập thông tin cần thiết để lấy lại mất khẩu.
