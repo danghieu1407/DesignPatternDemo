@@ -10,7 +10,17 @@
 
 [V. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
 
+[5.1 Các kiến thức về patterns](#51)  
+
+[5.2 Lý do ứng dụng patterns](#52)  
+
 [VI. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
+
+[6.1 Chi tiết thông tin ứng dụng](#61)  
+
+[6.2 Usecase Diagram](#62)  
+
+[6.3 Class Diagram](#63)  
 
 [VII. Kết quả triển khai thực tế ](#VII) 
 
@@ -45,12 +55,14 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 - Nhấn ```F5``` để chạy project.
 <a name = "V"></a>
 ## Các kiến thức về patterns và lý do ứng dụng patterns
+<a name = "51"></a>
 ### Các kiến thức về patterns
 - **Singleton Pattern**: Là một trong những design pattern thuộc nhóm khởi tạo – Creational Patterns. Singleton thường được sử dụng khi chúng ta mong muốn chỉ có một đối tượng tồn tại duy nhất và có thể truy cập ở mọi lúc. Singleton đảm bảo rằng 1 class chỉ có 1 instance duy nhất tồn tại ở bất kỳ thời điểm nào class đó được request.
 - **Decorator Pattern**: Là một trong những Pattern thuộc nhóm cấu trúc (Structural Pattern). Nó cho phép người dùng thêm chức năng mới vào đối tượng hiện tại mà không muốn ảnh hưởng đến các đối tượng khác. Kiểu thiết kế này có cấu trúc hoạt động như một lớp bao bọc (wrap) cho lớp hiện có.
 - **MVC Pattern**: Là design pattern (mẫu thiết kế) phổ biến được sử dụng cho lớp trình bày (Presentation Layer). ASP.NET Core MVC tuân theo pattern này và nó là căn bản nhất để mọi thứ xoay quanh nó.MVC là một pattern mạnh mẽ và biểu lộ rõ ràng kỹ thuật chia để trị (separating of concerns). Kiến trúc MVC chia ứng dụng ra làm 3 phần độc lập và duy nhất. Bao gồm layer Model, View và Controller.Mỗi một layer trên có một trách nhiệm cụ thể. Model chứa dữ liệu. View tạo ra giao diện người dùng từ dữ liệu ở Model và tương tác với người dùng. View sẽ chuyển tương tác từ người dùng đến Controller, từ đó Controller sẽ build Model và cập nhật View.
 - **Command Pattern**: Là một trong 23 design pattern Gang of Four nổi tiếng. Command pattern thuộc nhóm các pattern hành vi: Đóng gói tất cả thông tin cần thiết vào 1 đối tượng để thực hiện hành động hay kích hoạt một sự kiện thực hiện sau đó. Các thông tin có thể bao gồm tên phương thức, các biến và giá trị cần thiết...hay đơn giản hơn đó là nó cho phép chuyển yêu cầu thành đối tượng độc lập, có thể được sử dụng để tham số hóa các đối tượng với các yêu cầu khác nhau như log, queue (undo/redo), transtraction.
 - **Template Method Pattern**: Là một trong những Pattern thuộc nhóm hành vi (Behavior Pattern). Pattern này nói rằng “Định nghĩa một bộ khung của một thuật toán trong một chức năng, chuyển giao việc thực hiện nó cho các lớp con.
+<a name = "52"></a>
 ### Lý do ứng dụng patterns
 - **Singleton Pattern**: Khi sử dụng thì không nên để quá nhiều chức năng, cũng như tạo quá nhiều thực thể kết nối. Do đó Singleton Pattern áp dụng vào đây thì hợp lí, tất cả chức năng nên sử dụng chung một thực thể kết nối.
 - **Decorator Pattern**: Decorator Pattern phù hợp với các việc có sự thay đổi, ở đây sự thay đổi là khi thêm Phần thêm hoặc Topping(tuỳ theo sở thích mà khách hàng lựa chọn có hoặc không, hay có thể là cửa hàng có thêm Phần thêm hoặc Topping khác) dù có thay đổi thì cũng không gây ảnh hưởng đến các lớp cũ .Trong bài, Decorator dùng để bổ sung một số thức ăn là Phần thêm, Topping cho món ăn hoặc thức uống. Ở đây, thực đơn chia làm 6 món, trong đó có 3 món được áp dụng Decorator vào đó là Gà rán và Trà sữa. Decorator được dụng để thêm các Topping cho món ăn hoặc thức uống(món ăn là Gà rán, thức uống là Trà sữa).
@@ -59,6 +71,7 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 - **Template Method Pattern**: Template Method Pattern là một quá trình bao gồm các bước theo thứ tự không thay đổi, và cũng có những bước thường xuyên thay đổi tuỳ vào nhu cầu. Do đó ở đây dùng để nêu ra một số phương thức chung dùng để chế biến các món ăn và việc thực hiện cụ thể các món ăn đó được nêu rõ ở mỗi món nêu cụ thể.
 <a name = "VI"></a>
 ## Chi tiết thông tin ứng dụng pattern kèm theo class diagram
+<a name = "61"></a>
 ### Chi tiết thông tin ứng dụng
 Ứng dụng đặt đồ ăn "BÁ CHÁY" gồm cái 3 tác nhân chính là người dùng, nhân viên và admin
 - Người dùng: Có thể đăng nhập, đăng ký, quên mật khẩu và order món ăn.
@@ -68,10 +81,11 @@ Account dùng trong ứng dụng:
 - Account Admin: Email: PH123@gmail.com - Password: 123456
 - Account Staff: Email: GD123@gmail.com - Password: GD1234
 - Account Customer: Email: DH123@gmail.com - Password: DH1234
+<a name = "62"></a>
 ### Usecase Diagram
 
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
-
+<a name = "63"></a>
 ### Class Diagram
 
 ![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
