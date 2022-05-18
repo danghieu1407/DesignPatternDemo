@@ -67,6 +67,35 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [VIII. Thông tin người phát triển ](#VIII) 
 
+# DANH MỤC HÌNH
+[Hình 1. Tạo kết nối database](#1)  
+
+[Hình 2. Lấy connection String](#2)  
+
+[Hình 3. Sơ đồ Usecase](#3)  
+
+[Hình 4. Sơ đồ lớp](#4)  
+
+[Hình 5. Trang đăng nhập](#5)
+
+[Hình 6. Trang đăng ký](#6) 
+
+[Hình 7. Trang chủ với role Admin](#7) 
+
+[Hình 8. Trang chủ với role Staff](#8) 
+
+[Hình 9. Trang chủ với role Customer](#9) 
+
+[Hình 10. Trang giao diện đặt món ăn](#10) 
+
+[Hình 11. Trang giao diện đặt món ăn hoàn tất](#11)
+
+[Hình 12. Trang giao diện khu bếp](#12) 
+
+[Hình 13. Trang giao diện chế biến món ăn hoàn tất](#13) 
+
+[Hình 14. Trang giao diện quản lý tài khoản](#14) 
+
 
 <a name = "I"></a>
 ## Giới thiệu về ứng dụng
@@ -85,11 +114,11 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 - Mở folder ```DesignPatternDemo```, double click vào file ``` DesignPatternMidterm.sln``` và chọn mở bằng Visual Studio để mở project.
 - Đăng nhập vào SQL Server bằng chế độ ```SQL Server Authentication``` và import database từ file ```DemoDatabase.sql``` vào SQL Server.
 - Truy cập vào Visual Studio chọn ```Server Explorer``` và click chuột phải vào ```Data Connections``` chọn ```Add Connection```. Ở mục ```Log on to the server``` chọn ```SQL Server Authentication```, nhập vào các thông tin sau: ```User name ```,```Password``` và nhập tên server ở mục ```Server Name```, chọn tên database là ```DemoDatabase``` ở mục ```Select or enter a database name```.
-
+<a name = "1"></a>
   ![SQLConnect](https://user-images.githubusercontent.com/80830264/165013246-ab60d127-9351-421d-a6ad-9d6f08573c89.jpg)
 
 - Ở phần Properties, chọn và copy Connection String.
-
+<a name = "2"></a>
  ![ConnecttionString](https://user-images.githubusercontent.com/80830264/168459178-a0a07334-6a50-4ccd-99dd-efc162b59f7b.jpg)
 
 - Đổi ```Connection String``` ở file ./ConfigurationDTB/DatabaseProvide.cs dòng số 13.
@@ -124,59 +153,60 @@ Account dùng trong ứng dụng:
 - Account Customer: Email: DH123@gmail.com - Password: DH1234
 <a name = "62"></a>
 ### Usecase Diagram
-
+<a name = "3"></a>
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
 <a name = "63"></a>
-### Class Diagram
 
+### Class Diagram
+<a name = "4"></a>
 ![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
 <a name = "VII"></a>
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
 Người dùng nhập username và password để đăng nhập vào hệ thống, họ cũng có thể chọn nhớ tài khoản cho lần đăng nhập tiếp theo mà không cần nhập lại tài khoản. Nếu người dùng quên mật khẩu thì có thể chọn nút quên mật khẩu và nhập thông tin cần thiết để lấy lại mất khẩu.
-
+<a name = "5"></a>
 ![LoginScreen](https://user-images.githubusercontent.com/80830264/164934048-02c294e3-1abe-4732-9ce3-743635144b06.jpg)
 
 ### Trang đăng ký ứng dụng
 Người dùng nhập các thông tin cần thiết để đăng ký tài khoản nhằm mục đích sử dụng hệ thống.
-
+<a name = "6"></a>
 ![Register](https://user-images.githubusercontent.com/80830264/164934091-e3123603-9222-43f8-8098-20134c01c06a.jpg)
 
 ### Trang chủ ứng dụng
 Hiển thị các chức năng mà hệ thống có như Đặt món, Quản lí tài khoản, Khu bếp.
 ### Với role Admin
-
+<a name = "7"></a>
 ![MainScreenAdmin](https://user-images.githubusercontent.com/80830264/164915720-87de9768-d295-4f0a-acb3-3eec1d378dbe.jpg)
 
 ### Với role Staff
-
+<a name = "8"></a>
 ![MainScreenStaff](https://user-images.githubusercontent.com/80830264/164915730-1317c08e-b34f-40a5-ad90-500b3e9e2894.jpg)
 
 ### Với role Customer
-
+<a name = "9"></a>
 ![MainScreenCustomer](https://user-images.githubusercontent.com/80830264/164915740-0e6f3ab2-dfab-40c5-abe0-1bf74deb4604.jpg)
 
 ### Giao diện đặt món ăn
 Sau khi chọn chức năng Đặt món sẽ có giao diện như hình trên, tại đây có thể chọn các thức ăn hoặc thức uống có trên màn hình, có thể chọn thêm Phần thêm hoặc Topping. Có thể nhập số lượng món ăn cần mua, hiển thị tống giá tiền cần phải thanh toán.
-
+<a name = "10"></a>
 ![OrderScreen](https://user-images.githubusercontent.com/80830264/164916232-43e494de-2ab1-4bfd-89cb-295529dbde57.jpg)
 
 Say khi chọn món ấn đặt hàng. Hệ thống sẽ hiện lên số tiền bạn cần thanh toàn và yêu cầu bạn chuẩn bị đầy đủ số tiền để trả cho shipper.
-
+<a name = "11"></a>
 ![OrderScreenComplete](https://user-images.githubusercontent.com/80830264/168463175-51104780-4ed8-47a4-86ef-72947e36139d.jpg)
 
 ### Giao diện chế biến món ăn ở Khu bếp
 Khi chọn Khu bếp sẽ hiển thị giao diện chọn các món ăn chế biến. Khi chọn vào món ăn thì sẽ hiển thị cách thức thực hiện món ăn đó.
-
+<a name = "12"></a>
 ![KitchenScreen](https://user-images.githubusercontent.com/80830264/164916407-ab2c8df8-f93a-45d9-a5b3-688bf0e89f98.jpg)
 
 Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống sẽ tiến hành chế biến món ăn.
-
+<a name = "13"></a>
 ![KitchenScreenSuccess](https://user-images.githubusercontent.com/80830264/164916452-71de1428-f336-41ec-9620-20c2a5d01a72.jpg)
 
 ### Giao diện quản lý tài khoản
 Đây là giao diện quản lý tài khoản cho admin. Tại đây admin có thể có các thao tác như Thêm account mới, Sửa thông tin account, xóa account.
-
+<a name = "14"></a>
 ![ManageAccount](https://user-images.githubusercontent.com/80830264/164917023-fd82c105-b89a-4cd4-9c30-9390a88f3a59.jpg)
 <a name = "VIII"></a>
 ## Thông tin người phát triển
