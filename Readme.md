@@ -1,4 +1,45 @@
-# TIỂU LUẬN DESIGN PATTERN
+<div align="center">
+<h3> TỔNG LIÊN ĐOÀN LAO ĐỘNG VIỆT NAM </h3>
+<h3> TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG </h3>
+<h3> KHOA CÔNG NGHỆ THÔNG TIN </h3>
+  
+![image](https://user-images.githubusercontent.com/80830264/169096132-bc4e6152-a77c-4612-b73d-81d4104ba950.png)
+  <br>
+  <br>
+  <br>
+  <h3> TIỂU LUẬN GIỮA KÌ MÔN DESIGN PATTERN </h3>
+  <h2> TÌM HIỂU VỀ PATTERN </h2>
+  <br>
+</div>
+<div align="right">
+  <br>
+  <br>
+  <br>
+  <h3> <i> Người hướng dẫn </i>: ĐẶNG HUỲNH TRUNG TÍN </h3>
+  <h3>
+   <i> Người thực hiện </i>:  <b> ĐẶNG PHÚC HUY – 51900087 </b> </h3>
+  
+  <h3> GIANG VINH DIỄN – 51900035 </h3>
+ <h3> NGUYỄN ĐẶNG HIẾU – 51900073 </h3>
+ <h3> TRẦN GIA HUY - 51900685 </h3>
+ <h3> Lớp       :    19050201 </h3>
+ <h3> 19050202 </h3>
+   <h3> 19050281 </h3>
+ <h3> Khoá     :    23
+  </h3>
+  </div>
+  <div  align="center">
+  <h3> THÀNH PHỐ HỒ CHÍ MINH, NĂM 2022  </h3>
+  <br>
+  <h3> LỜI CẢM ƠN </h3>
+</div>
+<div style="text-indent: 30px">
+    Đầu tiên, chúng em xin gửi lời cảm ơn chân thành đến Thầy Đặng Huỳnh Trung Tín. Thầy là người hỗ trợ và hướng dẫn tận tình cho chúng em trong quá trình nghiên cứu, tìm hiểu để hoàn thành bài tiểu luận giữa kỳ môn Design Pattern. Tiếp theo, chúng em xin gửi lời cảm ơn đến khoa Công Nghệ Thông Tin trường Đại học Tôn Đức Thắng vì đã tạo điều kiện cho chúng em được học tập và nghiên cứu môn học này. Khoa đã luôn sẵn sàng chia sẻ các kiến thức bổ ích cũng như kinh nghiệm tham khảo tài liệu, giúp ích không chỉ cho việc thực hiện và hoàn thành đề tài nghiên cứu mà còn giúp ích cho việc học tập và rèn luyện trong quá trình thực hành tại trường Đại học Tôn Đức Thắng nói chung. Cuối cùng, trong quá tình hoàn tất đề tài của mình nhờ vào sự hướng dẫn, giúp đỡ và những kiến thức học hỏi được từ Quý thầy cô. Do giới hạn về mặt kiến thức và khả năng lý luận nên chúng em còn nhiều thiếu sót, kính mong sự chỉ dẫn và đóng góp của Quý thầy cô giáo để bài nghiên cứu của chúng em được hoàn thiện hơn. Hơn nữa, nhờ những góp ý từ thầy cô và bạn bè, chúng em sẽ hoàn thành tốt hơn ở các bài nghiên cứu khác sau này. Chúng em mong Quý thầy cô và bạn bè sẽ luôn quan tâm và hỗ trợ chúng em và chúc Quý thầy cô và các bạn luôn tràn đầy sức khỏe. 
+CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
+<br>
+  <br>
+ </div>
+
 # MỤC LỤC
 [I. Giới thiệu về ứng dụng](#I)  
 
