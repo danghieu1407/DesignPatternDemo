@@ -8,7 +8,7 @@
   <br>
   <br>
   <h3> TIỂU LUẬN GIỮA KÌ MÔN DESIGN PATTERN </h3>
-  <h2> TÌM HIỂU VỀ PATTERN </h2>
+  <h2> TÌM HIỂU VỀ PATTERNS </h2>
   <br>
 </div>
 <div align="right">
