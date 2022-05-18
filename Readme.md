@@ -1,16 +1,34 @@
 # TIỂU LUẬN DESIGN PATTERN
-![image](https://user-images.githubusercontent.com/80830264/169089285-fd2ba7f9-0155-4393-9cd4-8f75e6ea8424.png)
+# MỤC LỤC
+[I. Giới thiệu về ứng dụng](#I)  
+
+[II. Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng](#II)  
+
+[III. Yêu cầu thư viện, tool hỗ trợ, database](#III)  
+
+[IV. Cách khởi chạy](#IV)  
+
+[V. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
+
+[VI. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
+
+[VII. Kết quả triển khai thực tế ](#VII) 
+
+[VIII. Thông tin người phát triển ](#VIII) 
 
 
+<a name = "I"></a>
 ## Giới thiệu về ứng dụng
 Bumba là thương hiệu trà sữa có nguồn gốc thương hiệu tại Việt Nam. Nguyên vật liệu được kiểm duyệt và nhập khẩu từ Singapore và Đài Loan. Là thương hiệu đại
 diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng đầu tiên Bumba ra đời vào năm 2012, mang phong cách loại hình takeaway - trà sữa mang đi, mô hình được ưa chuộng nhất lúc đó. Năm 2013 chính thức thành lập công ty CP TMDV Chào Ngày Mới và đến 2017 công ty nhận vốn góp từ công ty TNHH DIOS Investment Vina - một quỹ đầu tư trực tiếp vốn 100% từ Hàn Quốc. Trước đó bằng hình thức chuyển nhượng thương hiệu, Bumba đã thành công với iệc sỡ hữu 33 cửa hàng trên toàn quốc chủ yếu ở các thành phố lớn như TP. Hồ Chí inh, Đà Nẵng, Hà Nội. Sau khi kết hợp cùng công ty DIOS, Bumba chính thức mở rộng thêm 11 cửa hàng ở các tỉnh thành: Quảng Ninh, Bình Dương, Vũng Tàu..Với châm ngôn tuyệt đối không sử dụng nguyên liệu không rõ nguồn gốc xuất xứ, trà sữa Bumba tự hào mang lại cho khách hàng những sản phẩm chất lượng nhất. Buba luôn cảm kích về sự tin dùng và dễ thương của quý khách hàng. Một trong những điều làm nên thương hiệu của Bumbap là việc order có thể diễn ra một cách trực tuyến ,nhanh gọn, an toàn và tiện lợi nhờ vào app quản lý đặt đồ ăn nhanh do đội ngũ dev gồm 4 thành viên phát triển.
+<a name = "II"></a>
 ## Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng
-
+<a name = "III"></a>
 ## Yêu cầu thư viện, tool hỗ trợ, database
 - Thư viện sử dụng: System.Text.RegularExpressions, System.Data
 - IDE: Visual Studio, Microsoft SQL Server Management Studio
 - Database: SQL
+<a name = "IV"></a>
 ## Cách khởi chạy
 - Clone project từ link: [Github](https://github.com/danghieu1407/DesignPatternDemo.git) bằng cách mở cmd và nhập lệnh ```git clone https://github.com/danghieu1407/DesignPatternDemo.git``` về máy của bạn.
 - Mở folder ```DesignPatternDemo```, double click vào file ``` DesignPatternMidterm.sln``` và chọn mở bằng Visual Studio để mở project.
@@ -25,6 +43,7 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 
 - Đổi ```Connection String``` ở file ./ConfigurationDTB/DatabaseProvide.cs dòng số 13.
 - Nhấn ```F5``` để chạy project.
+<a name = "V"></a>
 ## Các kiến thức về patterns và lý do ứng dụng patterns
 ### Các kiến thức về patterns
 - **Singleton Pattern**: Là một trong những design pattern thuộc nhóm khởi tạo – Creational Patterns. Singleton thường được sử dụng khi chúng ta mong muốn chỉ có một đối tượng tồn tại duy nhất và có thể truy cập ở mọi lúc. Singleton đảm bảo rằng 1 class chỉ có 1 instance duy nhất tồn tại ở bất kỳ thời điểm nào class đó được request.
@@ -38,6 +57,7 @@ diện cho sản phẩm chất lượng và giá thành hợp lí. Cửa hàng �
 - **MVC Pattern**: Áp dụng MVC (Model - View - Controller) để dễ dàng thao tác dữ liệu giữa Frontend và Backend, dễ dàng hơn trong việc kiểm tra, phát hiện lỗi để đảm bảo chất lượng phần mềm có kết quả cao hơn.
 - **Command Pattern**: Dùng để quản lý các nút chọn món ở trong phần đặt món. Command Pattern trong bài này có nhiệm vụ làm cho một số nút cùng Enable, Disable, đổi về cùng một màu, ẩn nút và hiện nút. Điều này giúp cho viêc lập trình bớt phức tạp và không còn bị thiếu hoặc thừa câu lệnh về nút (ví dụ như quên Enable nút hoặc Disable nhầm nút).
 - **Template Method Pattern**: Template Method Pattern là một quá trình bao gồm các bước theo thứ tự không thay đổi, và cũng có những bước thường xuyên thay đổi tuỳ vào nhu cầu. Do đó ở đây dùng để nêu ra một số phương thức chung dùng để chế biến các món ăn và việc thực hiện cụ thể các món ăn đó được nêu rõ ở mỗi món nêu cụ thể.
+<a name = "VI"></a>
 ## Chi tiết thông tin ứng dụng pattern kèm theo class diagram
 ### Chi tiết thông tin ứng dụng
 Ứng dụng đặt đồ ăn "BÁ CHÁY" gồm cái 3 tác nhân chính là người dùng, nhân viên và admin
@@ -55,7 +75,7 @@ Account dùng trong ứng dụng:
 ### Class Diagram
 
 ![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
-
+<a name = "VII"></a>
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
 Người dùng nhập username và password để đăng nhập vào hệ thống, họ cũng có thể chọn nhớ tài khoản cho lần đăng nhập tiếp theo mà không cần nhập lại tài khoản. Nếu người dùng quên mật khẩu thì có thể chọn nút quên mật khẩu và nhập thông tin cần thiết để lấy lại mất khẩu.
@@ -103,7 +123,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 Đây là giao diện quản lý tài khoản cho admin. Tại đây admin có thể có các thao tác như Thêm account mới, Sửa thông tin account, xóa account.
 
 ![ManageAccount](https://user-images.githubusercontent.com/80830264/164917023-fd82c105-b89a-4cd4-9c30-9390a88f3a59.jpg)
-
+<a name = "VIII"></a>
 ## Thông tin người phát triển
 - Nguyen Dang Hieu - 51900073
 - Giang Vinh Dien - 51900035
