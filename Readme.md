@@ -67,6 +67,8 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [VIII. Thông tin người phát triển ](#VIII) 
 
+[IX. Phân công công việc ](#IX) 
+
 # DANH MỤC HÌNH
 [Hình 1. Tạo kết nối database](#1)  
 
@@ -214,7 +216,8 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 - Giang Vinh Dien - 51900035
 - Dang Phuc Huy - 51900087
 - Tran Gia Huy - 51900685
-
+<a name = "IX"></a>
+## Phân công công việc
 | STT | Họ và Tên          | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
 | ------------- |:-------------:| :-------------:| :-------------:|:-----:|
 | 1 | Đặng Phúc Huy | 51900087 | Tạo menu và áp dụng Decorator Pattern cho gà rán và trà sữa, viết README.md | 100% |
