@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Data;
-using DesignPatternMidtem.ConfigDTB;
+using DesignPatternMidterm.ConfigDTB;
 using DesignPatternMidterm.Model;
 
 namespace DesignPatternMidterm.Controller

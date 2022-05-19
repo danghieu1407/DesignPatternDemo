@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternMidtem.ConfigDTB
+namespace DesignPatternMidterm.ConfigDTB
 {
     public  class DatabaseProvide
     {

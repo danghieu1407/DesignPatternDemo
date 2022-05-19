@@ -1,4 +1,5 @@
 ﻿using DesignPatternMidterm.Controller;
+using Demo.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,6 +54,9 @@ namespace DesignPatternMidterm.View
                 btnOrder.Enabled = true;
                 btnKitchen.Enabled = true;
                 btnManage.Enabled = true;
+                btnTable.Enabled = true;
+                btnManage.Enabled = true;
+                btnManagerStaff.Enabled = true;
             }
             else if (temp == 1)
             {
@@ -60,6 +64,9 @@ namespace DesignPatternMidterm.View
                 btnOrder.Enabled = true;
                 btnKitchen.Enabled = true;
                 btnManage.Hide();
+                btnTable.Hide();
+                btnManage.Hide();
+                btnManagerStaff.Hide();
 
             }
             else
@@ -67,6 +74,9 @@ namespace DesignPatternMidterm.View
                 btnOrder.Enabled = true;
                 btnKitchen.Hide();
                 btnManage.Hide();
+                btnTable.Hide();
+                btnManage.Hide();
+                btnManagerStaff.Hide();
             }
 
         }
@@ -88,6 +98,32 @@ namespace DesignPatternMidterm.View
             this.Hide();
             ManageAccount manage = new ManageAccount();
           
+            manage.ShowDialog();
+            this.Show();
+        }
+
+        private void btnManagerStaff_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StaffManager tbmng = new StaffManager();
+            tbmng.ShowDialog();
+            this.Show();
+        }
+
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TableManager tbmng = new TableManager();
+            tbmng.ShowDialog();
+            this.Show();
+        }
+
+        private void btnManage_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageAccount manage = new ManageAccount();
+
             manage.ShowDialog();
             this.Show();
         }
