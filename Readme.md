@@ -230,11 +230,9 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 - Tran Gia Huy - 51900685
 <a name = "IX"></a>
 ## Testcase về những tính năng áp dụng pattern
-### Singleton Pattern
-### Decorator Pattern
-### MVC Pattern
-### Command Pattern
-### Template Method Patter
+### Tính năng order 
+### Tính năng chế biến món
+
 <a name = "X"></a>
 ## Phân công công việc
 | STT | Họ và Tên | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
