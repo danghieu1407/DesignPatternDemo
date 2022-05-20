@@ -17,10 +17,10 @@
   <br>
   <h3> <i> Người hướng dẫn </i>: ĐẶNG HUỲNH TRUNG TÍN </h3>
   <h3>
-   <i> Người thực hiện </i>:  <b> ĐẶNG PHÚC HUY – 51900087 </b> </h3>
+   <i> Người thực hiện </i>:  <b> NGUYỄN ĐẶNG HIẾU – 51900073 </b> </h3>
   
   <h3> GIANG VINH DIỄN – 51900035 </h3>
- <h3> NGUYỄN ĐẶNG HIẾU – 51900073 </h3>
+ <h3>  ĐẶNG PHÚC HUY – 51900087 </h3>
  <h3> TRẦN GIA HUY - 51900685 </h3>
  <h3> Lớp       :    19050201 </h3>
  <h3> 19050202 </h3>
@@ -319,7 +319,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 
 <a name = "XI"></a>
 ## Thông tin người phát triển
-- Nguyen Dang Hieu - 51900073
-- Giang Vinh Dien - 51900035
-- Dang Phuc Huy - 51900087
-- Tran Gia Huy - 51900685
+- Nguyễn Đặng Hiếu - 51900073
+- Giang Vinh Diễn - 51900035
+- Đặng Phúc Huy - 51900087
+- Trần Gia Huy - 51900685
