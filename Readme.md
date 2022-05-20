@@ -15,7 +15,7 @@
   <br>
   <br>
   <br>
-  <h3> <i> Người hướng dẫn </i>: ĐẶNG HUỲNH TRUNG TÍN </h3>
+  <h3> <i> Người hướng dẫn </i>: Thầy ĐẶNG HUỲNH TRUNG TÍN </h3>
   <h3>
    <i> Người thực hiện </i>:  <b> NGUYỄN ĐẶNG HIẾU – 51900073 </b> </h3>
   
@@ -161,7 +161,7 @@ Khi phát triển phần mềm việc thêm hành vi (method) cho object thườ
 - Người dùng: Có thể đăng nhập, đăng ký, quên mật khẩu và order món ăn.
 - Nhân viên: Có các chức năng của người dùng và có thể chế biến món ăn.
 - Admin: Có tất cả chức năng của người dùng và nhân viên và có thêm chức năng quản lý tài khoản (CURD tài khoản).
-Account dùng trong ứng dụng:
+Account dùng trong ứng dụng.
 - Account Admin: Email: PH123@gmail.com - Password: 123456
 - Account Staff: Email: GD123@gmail.com - Password: GD1234
 - Account Customer: Email: DH123@gmail.com - Password: DH1234
