@@ -276,7 +276,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
     <thead>
         <tr>
             <th>Code</th>
-          <th colspan=5>Module2th>
+          <th colspan=5>Module2</th>
         </tr>
     </thead>
     <tbody>
