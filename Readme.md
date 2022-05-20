@@ -232,4 +232,4 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 | 1 | Đặng Phúc Huy | 51900087 | Tạo menu và áp dụng Decorator Pattern cho gà rán và trà sữa, viết README.md | 100% |
 | 2 | Giang Vinh Diễn | 51900035 | Command Pattern các nút món ăn, viết README.md | 100% |
 | 3 | Nguyễn Đặng Hiếu | 51900073 | MVC Pattern & Singleton Pattern, viết README.md | 100% |
-| 4 | Trần Gia Huy | 51900685 | Template Method pattern trong nhà bếp viết, README.md | 100% |
+| 4 | Trần Gia Huy | 51900685 | Template Method pattern trong nhà bếp, viết README.md | 100% |
