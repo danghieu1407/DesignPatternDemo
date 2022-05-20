@@ -59,7 +59,7 @@ namespace DesignPatternMidterm.Controller
         }
 
         //insert account to database
-        public void InsertAccount(string username, string password, string email)
+        public void InsertAccount(string username, string password, string email, int role)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
@@ -82,7 +82,7 @@ namespace DesignPatternMidterm.Controller
                     sqlCommand.Parameters.AddWithValue("@email", email);
                     sqlCommand.Parameters.AddWithValue("@name", username);
                     sqlCommand.Parameters.AddWithValue("@password", password);
-                    sqlCommand.Parameters.AddWithValue("@role", 0);
+                    sqlCommand.Parameters.AddWithValue("@role", role);
 
                     //sqlCommand.ExecuteNonQuery();
 
@@ -111,15 +111,16 @@ namespace DesignPatternMidterm.Controller
         }
 
         //update account in database
-        public void UpdateAccount(string username, string password, string email)
+        public void UpdateAccount(string username, string password, string email, int role)
         {
             using (SqlConnection sqlConnection = new SqlConnection(connection))
             {
                 sqlConnection.Open();
-                sqlCommand = new SqlCommand("UPDATE Account SET email = @email, password = @password WHERE name = @username", sqlConnection);
+                sqlCommand = new SqlCommand("UPDATE Account SET email = @email, password = @password, role = @role WHERE name = @username", sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@username", username);
                 sqlCommand.Parameters.AddWithValue("@email", email);
                 sqlCommand.Parameters.AddWithValue("@password", password);
+                sqlCommand.Parameters.AddWithValue("@role", role);
                 sqlCommand.ExecuteNonQuery();
                 //close
                 sqlConnection.Close();

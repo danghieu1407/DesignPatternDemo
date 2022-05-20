@@ -25,23 +25,28 @@ namespace DesignPatternMidterm.View
         public KitchenScreen()
         {
             InitializeComponent();
-
+            nau.Enabled = false;
             defColor = new DefColor(gaCay, gaPhoMai, pizzaHaiSan, pizzaThapCam );
             truGaCay = new DisableCmd(gaPhoMai, pizzaHaiSan, pizzaThapCam);
             truGaPhoMai = new DisableCmd(gaCay, pizzaThapCam, pizzaHaiSan);
             truhaisan = new DisableCmd(gaCay, gaPhoMai, pizzaThapCam);
             truthapcam = new DisableCmd(gaPhoMai, gaCay, pizzaHaiSan);
             tatCa = new EnableCmd(gaCay, gaPhoMai, pizzaHaiSan, pizzaThapCam);
+            //button gaCay not select
             
+                   
+
             cancel.Hide();
         }
 
         private void gaCay_Click(object sender, EventArgs e)
+
         {
             vicay = true;
             truGaCay.execute();
             cancel.Show();
             gaCay.BackColor = Color.Green;
+            nau.Enabled = true;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -68,6 +73,7 @@ namespace DesignPatternMidterm.View
             truGaPhoMai.execute();
             cancel.Show();
             gaPhoMai.BackColor = Color.Green;
+            nau.Enabled = true;
         }
 
         private void pizzaHaiSan_Click(object sender, EventArgs e)
@@ -76,6 +82,7 @@ namespace DesignPatternMidterm.View
             truhaisan.execute();
             cancel.Show();
             pizzaHaiSan.BackColor = Color.Green;
+            nau.Enabled = true;
         }
 
         private void pizzaThapCam_Click(object sender, EventArgs e)
@@ -84,6 +91,7 @@ namespace DesignPatternMidterm.View
             truthapcam.execute();
             cancel.Show();
             pizzaThapCam.BackColor = Color.Green;
+            nau.Enabled = true;
         }
 
         private void nau_Click(object sender, EventArgs e)

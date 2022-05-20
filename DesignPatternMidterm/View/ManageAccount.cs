@@ -32,7 +32,7 @@ namespace DesignPatternMidterm.View
         }
         private void ManageAccount_Load(object sender, EventArgs e)
         {
-            listUser();
+                listUser();
             //check null textbox
             
                 btnDelete.Enabled = false;
@@ -75,7 +75,21 @@ namespace DesignPatternMidterm.View
 
             else
             {
-                modify.InsertAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text);
+                string type = cbType.SelectedItem.ToString();
+                //if admin role 1
+                if (type == "Admin")
+                {
+                    //call method addAccount in modify
+                    modify.InsertAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text, 3);
+                    MessageBox.Show("Thêm tài khoản thành công");
+                    listUser();
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    txtEmail.Text = "";
+                }
+                //else if customer role  0
+               
+
                 //reload form and data in dataGridView
                 listUser();
                 //clear textbox
@@ -126,17 +140,37 @@ namespace DesignPatternMidterm.View
                 MessageBox.Show("Vui lòng nhập đúng định dạng email");
             }
             //update account in database
-            modify.UpdateAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text);
+            //get data in cbType
+            string type = cbType.SelectedItem.ToString();
+            //if admin is 1
+            if (type == "Admin")
+            {
+                modify.UpdateAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text, 3);
+            }
+            else if (type == "Customer")
+            {
+                modify.UpdateAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text, 0);
+            }
+            else
+            {
+                modify.UpdateAccount(txtUsername.Text, txtPassword.Text, txtEmail.Text, 1);
+            }
+
             listUser();
         }
 
         private void dtgvUser(object sender, DataGridViewCellEventArgs e)
         {
+            //get index
             index = e.RowIndex;
+            //print index
             DataGridViewRow row = dataGridView1.Rows[index];
+            //email name password role
+            txtEmail.Text = row.Cells[0].Value.ToString();
             txtUsername.Text = row.Cells[1].Value.ToString();
             txtPassword.Text = row.Cells[2].Value.ToString();
-            txtEmail.Text = row.Cells[0].Value.ToString();
+          
+            cbType.Text = row.Cells[3].Value.ToString();
             //disable btnAdd
             btnAdd.Enabled = false;
             btnDelete.Enabled = true;
@@ -149,6 +183,8 @@ namespace DesignPatternMidterm.View
             txtUsername.Text = "";
             txtPassword.Text = "";
             txtEmail.Text = "";
+            //cbType = null
+            cbType.SelectedIndex = -1;
             //enable btnAdd
             btnAdd.Enabled = true;
             btnDelete.Enabled = false;
