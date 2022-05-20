@@ -231,8 +231,86 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 <a name = "IX"></a>
 ## Testcase về những tính năng áp dụng pattern
 ### Tính năng order 
-### Tính năng chế biến món
+<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+          <th colspan=5>Module1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Test requirement</th>
+          <th colspan=5>Brief description about requirements which are tested in this table</th>
+        </tr>
+      <tr>
+            <th>Tester</th>
+          <th colspan=5></th>
+        </tr>
+        <tr>
+            <th>Passed</th>
+          <th>Failed</th>
+          <th>Untested</th>
+          <th>Blocked</th>
+          <th>Skipped</th>
+          <th>Number of Test cases</th>
+        </tr>
+        <tr>
+            <td>2</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+           <td>0</td>
+          <td>3</td>
+        </tr>
+    </tbody>
+</table>
 
+| ID | Test Case Description | Test Case Procedure | Expected Output | Inter-test case Dependence | Result | Test date | Note |
+| :------------- |:-------------:| :-------------:| :-------------:|:-----:| :-----:| :-----:| :-----:|
+| [Module1-1] | Khi chưa chọn món không bấm được nút hủy đơn | 1) Đăng nhập hệ thống 2) Chọn "Đặt món" 3) Bấm nút "Hủy đơn" | Không ấn được || Passed | |  |
+| [Module1-2] | Chọn 1 món 2 lần thì tự tăng số lượng | 1) Đăng nhập hệ thống 2) Chọn "Đặt món" 3) Bấm nút "thêm" 4) Lập lại bước 3 1 lần nữa | Tăng số lượng || Failed | |  |
+| [Module1-3] | Disabled các button khác khi đang chọn 1 món | 1) Đăng nhập hệ thống 2) Chọn "Đặt món" 3) Chọn 1 món | Disable các button khác || Passed | |  |
+### Tính năng chế biến món
+<table>
+    <thead>
+        <tr>
+            <th>Code</th>
+          <th colspan=5>Module2th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Test requirement</th>
+          <th colspan=5>Brief description about requirements which are tested in this table</th>
+        </tr>
+      <tr>
+            <th>Tester</th>
+          <th colspan=5></th>
+        </tr>
+        <tr>
+            <th>Passed</th>
+          <th>Failed</th>
+          <th>Untested</th>
+          <th>Blocked</th>
+          <th>Skipped</th>
+          <th>Number of Test cases</th>
+        </tr>
+        <tr>
+            <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+           <td>0</td>
+          <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+| ID | Test Case Description | Test Case Procedure | Expected Output | Inter-test case Dependence | Result | Test date | Note |
+| :------------- |:-------------:| :-------------:| :-------------:|:-----:| :-----:| :-----:| :-----:|
+| [Module2-1] | Khi chưa chọn món cần chế biến thì sẽ không hiện nút "Chế biến"| 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" | Không hiện nút "Chế biến" || Passed | |  |
+| [Module2-2] | Chọn 1 món thì sẽ không chọn được món khác | 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" 3) Chọn 1 món bất kì | Không chọn được món khác || Passed | |  |
 <a name = "X"></a>
 ## Phân công công việc
 | STT | Họ và Tên | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
@@ -241,5 +319,6 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 | 2 | Giang Vinh Diễn | 51900035 | Command Pattern các nút món ăn, viết README.md | 100% |
 | 3 | Nguyễn Đặng Hiếu | 51900073 | MVC Pattern & Singleton Pattern, viết README.md | 100% |
 | 4 | Trần Gia Huy | 51900685 | Template Method pattern trong nhà bếp, viết README.md | 100% |
+
 <a name = "XI"></a>
 ## Video demo
