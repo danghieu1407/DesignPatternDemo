@@ -119,7 +119,7 @@ Khi phát triển phần mềm việc thêm hành vi (method) cho object thườ
 
 <a name = "III"></a>
 ## Yêu cầu thư viện, tool hỗ trợ, database
-- Thư viện sử dụng: System.Text.RegularExpressions, System.Data
+- Thư viện sử dụng: Microsoft.VisualStudio.Services.Client(16.170.0), System.Data.SqlClient(4.8.3)
 - IDE: Visual Studio, Microsoft SQL Server Management Studio
 - Database: SQL
 <a name = "IV"></a>
