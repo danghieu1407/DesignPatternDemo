@@ -65,13 +65,13 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [VII. Kết quả triển khai thực tế ](#VII) 
 
-[VIII. Thông tin người phát triển ](#VIII) 
+[VIII.  Testcase về những tính năng áp dụng pattern ](#VIII)
 
-[IX.  Testcase về những tính năng áp dụng pattern ](#IX)
+[IX. Phân công công việc ](#IX)
 
-[X. Phân công công việc ](#X)
+[X. Video demo ](#X)
 
-[XI. Video demo ](#XI)
+[XI. Thông tin người phát triển ](#XI) 
 
 # DANH MỤC HÌNH
 [Hình 1. Tạo kết nối database](#1)  
@@ -223,12 +223,6 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 <a name = "14"></a>
 ![ManageAccount](https://user-images.githubusercontent.com/80830264/164917023-fd82c105-b89a-4cd4-9c30-9390a88f3a59.jpg)
 <a name = "VIII"></a>
-## Thông tin người phát triển
-- Nguyen Dang Hieu - 51900073
-- Giang Vinh Dien - 51900035
-- Dang Phuc Huy - 51900087
-- Tran Gia Huy - 51900685
-<a name = "IX"></a>
 ## Testcase về những tính năng áp dụng pattern
 ### Tính năng order 
 <table>
@@ -311,7 +305,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 | :------------- |:-------------:| :-------------:| :-------------:|:-----:| :-----:| :-----:| :-----:|
 | [Module2-1] | Khi chưa chọn món cần chế biến thì sẽ không hiện nút "Chế biến"| 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" | Không hiện nút "Chế biến" || Passed | |  |
 | [Module2-2] | Chọn 1 món thì sẽ không chọn được món khác | 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" 3) Chọn 1 món bất kì | Không chọn được món khác || Passed | |  |
-<a name = "X"></a>
+<a name = "IX"></a>
 ## Phân công công việc
 | STT | Họ và Tên | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
 | ------------- |:-------------:| :-------------:| :-------------:|:-----:|
@@ -320,5 +314,12 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 | 3 | Nguyễn Đặng Hiếu | 51900073 | MVC Pattern & Singleton Pattern, viết README.md | 100% |
 | 4 | Trần Gia Huy | 51900685 | Template Method pattern trong nhà bếp, viết README.md | 100% |
 
-<a name = "XI"></a>
+<a name = "X"></a>
 ## Video demo
+
+<a name = "XI"></a>
+## Thông tin người phát triển
+- Nguyen Dang Hieu - 51900073
+- Giang Vinh Dien - 51900035
+- Dang Phuc Huy - 51900087
+- Tran Gia Huy - 51900685
