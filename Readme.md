@@ -67,7 +67,9 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [VIII. Thông tin người phát triển ](#VIII) 
 
-[IX. Phân công công việc ](#IX) 
+[IX.  Testcase về những tính năng áp dụng pattern ](#IX)
+
+[X. Phân công công việc ](#X)
 
 # DANH MỤC HÌNH
 [Hình 1. Tạo kết nối database](#1)  
@@ -217,8 +219,15 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 - Dang Phuc Huy - 51900087
 - Tran Gia Huy - 51900685
 <a name = "IX"></a>
+## Testcase về những tính năng áp dụng pattern
+### Singleton Pattern
+### Decorator Pattern
+### MVC Pattern
+### Command Pattern
+### Template Method Patter
+<a name = "X"></a>
 ## Phân công công việc
-| STT | Họ và Tên          | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
+| STT | Họ và Tên | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
 | ------------- |:-------------:| :-------------:| :-------------:|:-----:|
 | 1 | Đặng Phúc Huy | 51900087 | Tạo menu và áp dụng Decorator Pattern cho gà rán và trà sữa, viết README.md | 100% |
 | 2 | Giang Vinh Diễn | 51900035 | Command Pattern các nút món ăn, viết README.md | 100% |
