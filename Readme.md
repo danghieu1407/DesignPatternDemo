@@ -305,6 +305,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 | :------------- |:-------------:| :-------------:| :-------------:|:-----:| :-----:| :-----:| :-----:|
 | [Module2-1] | Khi chưa chọn món cần chế biến thì sẽ không hiện nút "Chế biến"| 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" | Không hiện nút "Chế biến" || Passed | |  |
 | [Module2-2] | Chọn 1 món thì sẽ không chọn được món khác | 1) Đăng nhập hệ thống 2) Chọn "Khu bếp" 3) Chọn 1 món bất kì | Không chọn được món khác || Passed | |  |
+
 <a name = "IX"></a>
 ## Phân công công việc
 | STT | Họ và Tên | MSSV | CÔNG VIỆC | MỨC ĐỘ HOÀN THÀNH |
