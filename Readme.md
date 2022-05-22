@@ -94,15 +94,15 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 ### [Hình 4. Sơ đồ lớp](#41)  
 
-### [Hình 5. Sơ đồ Singleton Pattern](#42)  
+### [Hình 5. Sơ đồ lớp Singleton Pattern](#42)  
 
-### [Hình 6. Sơ đồ Decorator Pattern](#43)  
+### [Hình 6. Sơ đồ lớp Decorator Pattern](#43)  
 
-### [Hình 7. Sơ đồ MVC Pattern](#44) 
+### [Hình 7. Sơ đồ lớp MVC Pattern](#44) 
 
-### [Hình 8. Sơ đồ Command Pattern](#45)  
+### [Hình 8. Sơ đồ lớp Command Pattern](#45)  
 
-### [Hình 9. Sơ đồ Template Method Pattern](#46)  
+### [Hình 9. Sơ đồ lớp Template Method Pattern](#46)  
 
 ### [Hình 10. Trang đăng nhập](#5)
 
