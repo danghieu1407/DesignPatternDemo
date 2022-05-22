@@ -1,4 +1,4 @@
-﻿create database DemoDesignPattern
+create database DemoDesignPattern
 go
 
 use DemoDesignPattern
@@ -95,8 +95,7 @@ insert BanAn(name_table, status_table) values (N'Bàn 20','0')
 
 
 
-insert Account(email,name,role) values ('PH01@gmail.com',N'Đặng Phúc Huy',3)
-insert Account(email,name,role) values ('GD02@gmail.com',N'Giang Vinh Diễn',1)
-insert Account(email,name) values ('DH03@gmail.com',N'Nguyễn Đặng Hiếu')
-insert Account(email,name) values ('GH04@gmail.com',N'Trần Gia Huy')
-
+insert Account(email,name,password,role) values ('PH123@gmail.com',N'Đặng Phúc Huy','123456',3)
+insert Account(email,name,password,role) values ('GD123@gmail.com',N'Giang Vinh Diễn','GD1234',1)
+insert Account(email,name,password,role) values ('DH123@gmail.com',N'Nguyễn Đặng Hiếu','DH1234',0)
+insert Account(email,name,password,role) values ('GH123@gmail.com',N'Trần Gia Huy','GH1234',0)
