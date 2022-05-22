@@ -41,21 +41,21 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
  </div>
 
 # MỤC LỤC
-[I. Giới thiệu về ứng dụng](#I)  
+[1. Giới thiệu về ứng dụng](#I)  
 
-[II. Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng](#II)  
+[2. Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng](#II)  
 
-[III. Yêu cầu thư viện, tool hỗ trợ, database](#III)  
+[3. Yêu cầu thư viện, tool hỗ trợ, database](#III)  
 
-[IV. Cách khởi chạy](#IV)  
+[4. Cách khởi chạy](#IV)  
 
-[V. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
+[5. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
 
 [5.1 Các kiến thức về patterns](#51)  
 
 [5.2 Lý do ứng dụng patterns](#52)  
 
-[VI. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
+[6. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
 
 [6.1 Chi tiết thông tin ứng dụng](#61)  
 
@@ -75,15 +75,15 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [6.3.4 Class Diagram Template Method Pattern](#46)  
 
-[VII. Kết quả triển khai thực tế ](#VII) 
+[7. Kết quả triển khai thực tế ](#VII) 
 
-[VIII.  Testcase về những tính năng áp dụng pattern ](#VIII)
+[8.  Testcase về những tính năng áp dụng pattern ](#VIII)
 
-[IX. Phân công công việc ](#IX)
+[9. Phân công công việc ](#IX)
 
-[X. Video demo ](#X)
+[10. Video demo ](#X)
 
-[XI. Thông tin người phát triển ](#XI) 
+[11. Thông tin người phát triển ](#XI) 
 
 # DANH MỤC HÌNH
 [Hình 1. Tạo kết nối database](#1)  
