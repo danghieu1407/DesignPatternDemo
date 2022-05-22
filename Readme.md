@@ -187,6 +187,7 @@ Account dùng trong ứng dụng.
 - Account Admin: Email: PH123@gmail.com - Password: 123456
 - Account Staff: Email: GD123@gmail.com - Password: GD1234
 - Account Customer: Email: DH123@gmail.com - Password: DH1234
+- Account Customer: Email: GH123@gmail.com - Password: GH1234
 <a name = "62"></a>
 ### Usecase Diagram
 <a name = "3"></a>
