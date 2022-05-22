@@ -357,7 +357,7 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 
 <a name = "X"></a>
 ## Video demo
-
+[https://youtu.be/ZTJHH8LiBMg](https://youtu.be/ZTJHH8LiBMg)
 <a name = "XI"></a>
 ## Thông tin người phát triển
 - Nguyễn Đặng Hiếu - 51900073
