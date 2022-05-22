@@ -61,7 +61,19 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [6.2 Usecase Diagram](#62)  
 
-[6.3 Class Diagram](#63)  
+[6.3 Class Diagram](#63)
+
+[6.3.1 Class Diagram toàn hệ thống](#41)  
+
+[6.3.2 Class Diagram Singleton Pattern](#42)  
+
+[6.3.3 Class Diagram Decorator Pattern](#43)  
+
+[6.3.4 Class Diagram MVC Pattern](#44)  
+
+[6.3.4 Class Diagram Command Pattern](#45)  
+
+[6.3.4 Class Diagram Template Method Pattern](#46)  
 
 [VII. Kết quả triển khai thực tế ](#VII) 
 
@@ -170,10 +182,26 @@ Account dùng trong ứng dụng.
 <a name = "3"></a>
 ![UseCase](https://user-images.githubusercontent.com/102457174/165016879-e82210a3-f2c8-4e8a-a28c-533107a07cc2.png)
 <a name = "63"></a>
-
 ### Class Diagram
-<a name = "4"></a>
+<a name = "41"></a>
+#### Class Diagram toàn hệ thống
 ![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
+<a name = "42"></a>
+### Class Diagram Singleton Pattern
+![image](https://user-images.githubusercontent.com/102457174/169688084-c31f3ddf-f80e-42d0-82bb-20a6b31255ec.png)
+<a name = "43"></a>
+### Class Diagram Decorator Pattern
+![image](https://user-images.githubusercontent.com/102457174/169688113-eae313e5-2ce8-434e-8929-51cf8b40c478.png)
+<a name = "44"></a>
+### Class Diagram MVC Pattern
+![image](https://user-images.githubusercontent.com/102457174/169688136-8e6911ae-de55-45db-a560-c53bb5c9fb11.png)
+<a name = "45"></a>
+### Class Diagram Command Pattern
+![image](https://user-images.githubusercontent.com/102457174/169688187-3e77bb99-e0d3-40e1-a33a-1fce319b8bd2.png)
+<a name = "46"></a>
+### Class Diagram Template Method Pattern
+![image](https://user-images.githubusercontent.com/102457174/169688202-0923b093-377a-4058-90ce-8955a6130cd5.png)
+
 <a name = "VII"></a>
 ## Kết quả triển khai thực tế 
 ### Trang đăng nhập ứng dụng
