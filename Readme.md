@@ -41,88 +41,88 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
  </div>
 
 # MỤC LỤC
-[1. Giới thiệu về ứng dụng](#I)  
+### [1. Giới thiệu về ứng dụng](#I)  
 
-[2. Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng](#II)  
+### [2. Vấn đề đặt ra khi không áp dụng Design Pattern vào ứng dụng](#II)  
 
-[3. Yêu cầu thư viện, tool hỗ trợ, database](#III)  
+### [3. Yêu cầu thư viện, tool hỗ trợ, database](#III)  
 
-[4. Cách khởi chạy](#IV)  
+### [4. Cách khởi chạy](#IV)  
 
-[5. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
+### [5. Các kiến thức về patterns và lý do ứng dụng patterns](#V) 
 
-[5.1 Các kiến thức về patterns](#51)  
+#### [5.1 Các kiến thức về patterns](#51)  
 
-[5.2 Lý do ứng dụng patterns](#52)  
+#### [5.2 Lý do ứng dụng patterns](#52)  
 
-[6. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
+### [6. Chi tiết thông tin ứng dụng pattern kèm theo class diagram](#VI) 
 
-[6.1 Chi tiết thông tin ứng dụng](#61)  
+#### [6.1 Chi tiết thông tin ứng dụng](#61)  
 
-[6.2 Usecase Diagram](#62)  
+#### [6.2 Usecase Diagram](#62)  
 
-[6.3 Class Diagram](#63)
+#### [6.3 Class Diagram](#63)
 
-[6.3.1 Class Diagram toàn hệ thống](#41)  
+##### [6.3.1 Class Diagram toàn hệ thống](#41)  
 
-[6.3.2 Class Diagram Singleton Pattern](#42)  
+##### [6.3.2 Class Diagram Singleton Pattern](#42)  
 
-[6.3.3 Class Diagram Decorator Pattern](#43)  
+##### [6.3.3 Class Diagram Decorator Pattern](#43)  
 
-[6.3.4 Class Diagram MVC Pattern](#44)  
+##### [6.3.4 Class Diagram MVC Pattern](#44)  
 
-[6.3.4 Class Diagram Command Pattern](#45)  
+##### [6.3.4 Class Diagram Command Pattern](#45)  
 
-[6.3.4 Class Diagram Template Method Pattern](#46)  
+##### [6.3.4 Class Diagram Template Method Pattern](#46)  
 
-[7. Kết quả triển khai thực tế ](#VII) 
+### [7. Kết quả triển khai thực tế ](#VII) 
 
-[8.  Testcase về những tính năng áp dụng pattern ](#VIII)
+### [8.  Testcase về những tính năng áp dụng pattern ](#VIII)
 
-[9. Phân công công việc ](#IX)
+### [9. Phân công công việc ](#IX)
 
-[10. Video demo ](#X)
+### [10. Video demo ](#X)
 
-[11. Thông tin người phát triển ](#XI) 
+### [11. Thông tin người phát triển ](#XI) 
 
 # DANH MỤC HÌNH
-[Hình 1. Tạo kết nối database](#1)  
+### [Hình 1. Tạo kết nối database](#1)  
 
-[Hình 2. Lấy connection String](#2)  
+### [Hình 2. Lấy connection String](#2)  
 
-[Hình 3. Sơ đồ Usecase](#3)  
+### [Hình 3. Sơ đồ Usecase](#3)  
 
-[Hình 4. Sơ đồ lớp](#41)  
+### [Hình 4. Sơ đồ lớp](#41)  
 
-[Hình 5. Sơ đồ Singleton Pattern](#42)  
+### [Hình 5. Sơ đồ Singleton Pattern](#42)  
 
-[Hình 6. Sơ đồ Decorator Pattern](#43)  
+### [Hình 6. Sơ đồ Decorator Pattern](#43)  
 
-[Hình 7. Sơ đồ MVC Pattern](#44) 
+### [Hình 7. Sơ đồ MVC Pattern](#44) 
 
-[Hình 8. Sơ đồ Command Pattern](#45)  
+### [Hình 8. Sơ đồ Command Pattern](#45)  
 
-[Hình 9. Sơ đồ Template Method Pattern](#46)  
+### [Hình 9. Sơ đồ Template Method Pattern](#46)  
 
-[Hình 10. Trang đăng nhập](#5)
+### [Hình 10. Trang đăng nhập](#5)
 
-[Hình 11. Trang đăng ký](#6) 
+### [Hình 11. Trang đăng ký](#6) 
 
-[Hình 12. Trang chủ với role Admin](#7) 
+### [Hình 12. Trang chủ với role Admin](#7) 
 
-[Hình 13. Trang chủ với role Staff](#8) 
+### [Hình 13. Trang chủ với role Staff](#8) 
 
-[Hình 14. Trang chủ với role Customer](#9) 
+### [Hình 14. Trang chủ với role Customer](#9) 
 
-[Hình 15. Trang giao diện đặt món ăn](#10) 
+### [Hình 15. Trang giao diện đặt món ăn](#10) 
 
-[Hình 16. Trang giao diện đặt món ăn hoàn tất](#11)
+### [Hình 16. Trang giao diện đặt món ăn hoàn tất](#11)
 
-[Hình 17. Trang giao diện khu bếp](#12) 
+### [Hình 17. Trang giao diện khu bếp](#12) 
 
-[Hình 18. Trang giao diện chế biến món ăn hoàn tất](#13) 
+### [Hình 18. Trang giao diện chế biến món ăn hoàn tất](#13) 
 
-[Hình 19. Trang giao diện quản lý tài khoản](#14) 
+### [Hình 19. Trang giao diện quản lý tài khoản](#14) 
 
 
 <a name = "I"></a>
