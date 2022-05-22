@@ -92,27 +92,37 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 [Hình 3. Sơ đồ Usecase](#3)  
 
-[Hình 4. Sơ đồ lớp](#4)  
+[Hình 4. Sơ đồ lớp](#41)  
 
-[Hình 5. Trang đăng nhập](#5)
+[Hình 5. Sơ đồ Singleton Pattern](#42)  
 
-[Hình 6. Trang đăng ký](#6) 
+[Hình 6. Sơ đồ Decorator Pattern](#43)  
 
-[Hình 7. Trang chủ với role Admin](#7) 
+[Hình 7. Sơ đồ MVC Pattern](#44) 
 
-[Hình 8. Trang chủ với role Staff](#8) 
+[Hình 8. Sơ đồ Command Pattern](#45)  
 
-[Hình 9. Trang chủ với role Customer](#9) 
+[Hình 9. Sơ đồ Template Method Pattern](#46)  
 
-[Hình 10. Trang giao diện đặt món ăn](#10) 
+[Hình 10. Trang đăng nhập](#5)
 
-[Hình 11. Trang giao diện đặt món ăn hoàn tất](#11)
+[Hình 11. Trang đăng ký](#6) 
 
-[Hình 12. Trang giao diện khu bếp](#12) 
+[Hình 12. Trang chủ với role Admin](#7) 
 
-[Hình 13. Trang giao diện chế biến món ăn hoàn tất](#13) 
+[Hình 13. Trang chủ với role Staff](#8) 
 
-[Hình 14. Trang giao diện quản lý tài khoản](#14) 
+[Hình 14. Trang chủ với role Customer](#9) 
+
+[Hình 15. Trang giao diện đặt món ăn](#10) 
+
+[Hình 16. Trang giao diện đặt món ăn hoàn tất](#11)
+
+[Hình 17. Trang giao diện khu bếp](#12) 
+
+[Hình 18. Trang giao diện chế biến món ăn hoàn tất](#13) 
+
+[Hình 19. Trang giao diện quản lý tài khoản](#14) 
 
 
 <a name = "I"></a>
@@ -185,7 +195,9 @@ Account dùng trong ứng dụng.
 ### Class Diagram
 <a name = "41"></a>
 #### Class Diagram toàn hệ thống
+<a name = "4"></a>
 ![dp drawio](https://user-images.githubusercontent.com/74227813/168469843-aebdeed9-4cc7-4967-8035-6dbcd68dc041.png)
+
 <a name = "42"></a>
 ### Class Diagram Singleton Pattern
 ![image](https://user-images.githubusercontent.com/102457174/169688084-c31f3ddf-f80e-42d0-82bb-20a6b31255ec.png)
