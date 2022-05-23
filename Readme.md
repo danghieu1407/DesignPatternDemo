@@ -83,7 +83,9 @@ CHÚNG EM XIN CHÂN THÀNH CẢM ƠN!. 
 
 ### [10. Video demo ](#X)
 
-### [11. Thông tin người phát triển ](#XI) 
+### [11. Tài liệu tham khảo ](#XII) 
+
+### [12. Thông tin người phát triển ](#XI) 
 
 # DANH MỤC HÌNH
 ### [Hình 1. Tạo kết nối database](#1)  
@@ -362,6 +364,14 @@ Sau khi chọn món ăn cần chế biến và nhấn chế biến. Hệ thống
 <a name = "X"></a>
 ## Video demo
 [https://youtu.be/ZTJHH8LiBMg](https://youtu.be/ZTJHH8LiBMg)
+
+<a name = "XII"></a>
+## Tài liệu tham khảo
+### Tiếng việt:
+[1. https://toihocdesignpattern.com/](https://toihocdesignpattern.com/) <br>
+[2. https://viblo.asia/p/cach-viet-readme-chat-LzD5dr9EZjY](https://viblo.asia/p/cach-viet-readme-chat-LzD5dr9EZjY)
+### Tiếng anh
+[1. https://www.tutorialspoint.com/design_pattern](https://www.tutorialspoint.com/design_pattern)
 <a name = "XI"></a>
 ## Thông tin người phát triển
 - Nguyễn Đặng Hiếu - 51900073
