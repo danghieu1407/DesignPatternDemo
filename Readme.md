@@ -140,6 +140,7 @@ Pattern này giúp tách phần view  ra khỏi model và controller. Điều n�
 ### Command Pattern
 Trong bài này, command pattern giúp việc bật tắt các nút trong form trở nên gọn gàng hơn vì nó gom các nút có cùng tác vụ lại thành 1 nút. Nếu không sử dụng pattern này, code sẽ bị tràn lan và lặp lại như nhau ở mỗi khi chúng ta gọi 1 nút
 ### Template Method Pattern
+Pattern này giúp việc code trở nên dễ dàng hơn và tránh trùng lặp. Cụ thể là các thao tác chung của các lớp con sẽ đc gom lại ở lớp cha và khi chúng muốn gọi hàm ra thì hàm sẽ được hiện thực bên trong lớp con đó. Khi muốn bảo trì hay sửa chữa hàm của lớp con nào thì ta sửa trong hàm đó. Tránh trường hợp ảnh hưởng đến các hàm khác
 
 <a name = "III"></a>
 ## Yêu cầu thư viện, tool hỗ trợ, database
