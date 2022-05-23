@@ -136,8 +136,9 @@ Nếu khởi tạo nhiều hơn một đối tượng thì sẽ gặp phải m�
 ### Decorator Pattern
 Khi phát triển phần mềm việc thêm hành vi (method) cho object thường xảy ra. Để giải quyết vấn đề này ta có thể bổ sung hành vi cho object bằng cách thêm method vào class hoặc tạo 1 sub class có thêm method. Bổ sung method cho class thì chúng ta cần kiểm thử lại code cho cả class. Hơn nữa cách kế thừa cũng có nhược điểm là nó chỉ thêm hành vi tĩnh chứ không giúp object có để sử dụng hành vi mới trong quá trình chạy
 ### MVC Pattern
-Pattern này giúp tách phần view  ra khỏi model và controller. Điều này có nghĩa là khi chúng ta muốn sửa đổi thuật toán thì nó sẽ không ảnh hưởng đến những phần không liên quan. Nếu  không sử dụng pattern này, thì việc sắp xếp và sửa đổi các thuật toán sẽ ảnh huongwr đến các phần không liên quan
+Pattern này giúp tách phần view  ra khỏi model và controller. Điều này có nghĩa là khi chúng ta muốn sửa đổi thuật toán thì nó sẽ không ảnh hưởng đến những phần không liên quan. Nếu  không sử dụng pattern này, thì việc sắp xếp và sửa đổi các thuật toán sẽ ảnh hưởng đến các phần không liên quan.
 ### Command Pattern
+Trong bài này, command pattern giúp việc bật tắt các nút trong form trở nên gọn gàng hơn vì nó gom các nút có cùng tác vụ lại thành 1 nút. Nếu không sử dụng pattern này, code sẽ bị tràn lan và lặp lại như nhau ở mỗi khi chúng ta gọi 1 nút
 ### Template Method Pattern
 
 <a name = "III"></a>
